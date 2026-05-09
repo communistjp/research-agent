@@ -1,0 +1,46 @@
+{
+  "browser_use": "limited_verification_only",
+  "max_browser_tasks_per_run": 5,
+  "max_browser_pages_per_task": 3,
+  "allowed": [
+    "open_page",
+    "search",
+    "follow_links",
+    "open_pdf",
+    "read_public_or_authorized_page",
+    "record_url_title_published_at_fetched_at_source",
+    "small_scale_screenshot_for_verification",
+    "verify_api_or_html_result_on_original_page"
+  ],
+  "forbidden": [
+    "form_submission",
+    "email_send",
+    "social_post",
+    "comment_post",
+    "purchase",
+    "reservation",
+    "application",
+    "registration",
+    "delete",
+    "settings_change",
+    "account_change",
+    "password_entry",
+    "payment_entry",
+    "captcha_or_bot_detection_bypass",
+    "access_control_bypass",
+    "bulk_browser_collection_as_paid_api_substitute",
+    "bulk_paywalled_text_storage",
+    "external_transmission_of_personal_or_non_public_information"
+  ],
+  "retrieval_priority": [
+    "api",
+    "rss",
+    "official_csv",
+    "official_pdf",
+    "public_html",
+    "search",
+    "playwright",
+    "chrome_extension",
+    "manual_check"
+  ]
+}

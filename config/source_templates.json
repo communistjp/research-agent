@@ -1,0 +1,39 @@
+{
+  "source_types": [
+    "official_government",
+    "official_parliament",
+    "official_local_government",
+    "official_court_or_law",
+    "official_company",
+    "news_media",
+    "think_tank",
+    "academic",
+    "ngo",
+    "social_media",
+    "blog",
+    "database",
+    "unknown"
+  ],
+  "methods": [
+    "api",
+    "rss",
+    "official_csv",
+    "official_pdf",
+    "public_html",
+    "search",
+    "manual_check"
+  ],
+  "access_scopes": [
+    "public",
+    "login_required",
+    "paid_access",
+    "internal",
+    "unknown"
+  ],
+  "recommended_growth_flow": [
+    "Prefer official APIs, RSS, official CSV/PDF, and public HTML.",
+    "Add a candidate with source:add as disabled when terms are unknown.",
+    "Enable only after robots and terms are allowed or manually reviewed.",
+    "Use browser tasks only for small-scale source verification, not bulk collection."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "research-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "sample": "node dist/index.js",
+    "run": "node dist/index.js",
+    "schedule": "node dist/scheduler.js",
+    "topic:add": "node dist/cli/topicAdd.js",
+    "source:add": "node dist/cli/sourceAdd.js",
+    "source:list": "node dist/cli/sourceList.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "tesseract.js": "^6.0.1"
+  }
+}

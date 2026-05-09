@@ -1,0 +1,59 @@
+[
+  {
+    "id": "sample-official-rss",
+    "name": "Sample Official RSS Fixture",
+    "source_type": "official_company",
+    "url": "data:application/rss+xml,%3Crss%20version%3D%222.0%22%3E%3Cchannel%3E%3Ctitle%3ESample%20Official%20RSS%3C%2Ftitle%3E%3Citem%3E%3Ctitle%3EOpenAI%20API%20sample%20announcement%3C%2Ftitle%3E%3Clink%3Ehttps%3A%2F%2Fexample.org%2Fofficial-sample%3C%2Flink%3E%3CpubDate%3ESat%2C%2009%20May%202026%2000%3A00%3A00%20GMT%3C%2FpubDate%3E%3Cdescription%3ESample%20public%20RSS%20item%20used%20to%20verify%20retrieval%20metadata%20and%20report%20generation.%3C%2Fdescription%3E%3C%2Fitem%3E%3C%2Fchannel%3E%3C%2Frss%3E",
+    "terms_status": "allowed",
+    "terms_url": "data:text/plain,Automated%20collection%20for%20this%20public%20fixture%20is%20allowed.",
+    "method": "rss",
+    "access_scope": "public",
+    "enabled": true
+  },
+  {
+    "id": "sample-official-csv",
+    "name": "Sample Official CSV Fixture",
+    "source_type": "official_government",
+    "url": "data:text/csv,title,url,published_at,summary%0AOfficial%20CSV%20sample,https%3A%2F%2Fexample.org%2Fofficial-csv,2026-05-09,Sample%20official%20CSV%20row%20used%20to%20verify%20structured%20data%20collection.",
+    "terms_status": "allowed",
+    "terms_url": "data:text/plain,Automated%20collection%20for%20this%20public%20fixture%20is%20allowed.",
+    "method": "official_csv",
+    "access_scope": "public",
+    "enabled": true
+  },
+  {
+    "id": "sample-official-pdf",
+    "name": "Sample Official PDF Fixture",
+    "source_type": "official_government",
+    "url": "data:application/pdf;base64,JVBERi0xLjQKMSAwIG9iago8PCAvVHlwZSAvQ2F0YWxvZyAvUGFnZXMgMiAwIFIgPj4KZW5kb2JqCjIgMCBvYmoKPDwgL1R5cGUgL1BhZ2VzIC9LaWRzIFszIDAgUl0gL0NvdW50IDEgPj4KZW5kb2JqCjMgMCBvYmoKPDwgL1R5cGUgL1BhZ2UgL1BhcmVudCAyIDAgUiAvTWVkaWFCb3ggWzAgMCA2MTIgNzkyXSAvQ29udGVudHMgNCAwIFIgL1Jlc291cmNlcyA8PCAvRm9udCA8PCAvRjEgNSAwIFIgPj4gPj4gPj4KZW5kb2JqCjQgMCBvYmoKPDwgL0xlbmd0aCAxNTggPj4Kc3RyZWFtCkJUCi9GMSAxMiBUZgo3MiA3MjAgVGQKKE9mZmljaWFsIFBERiBzYW1wbGUgYWRtaW5pc3RyYXRpdmUgbm90aWNlLikgVGoKMCAtMTggVGQKKFNlY3Rpb24gMSAgU3VtbWFyeSAgUHVibGljIGRhdGEgY29sbGVjdGlvbiBtZXRhZGF0YS4pIFRqCjAgLTE4IFRkCihJdGVtICAgIFZhbHVlICAgIE5vdGVzKSBUagpFVAplbmRzdHJlYW0KZW5kb2JqCjUgMCBvYmoKPDwgL1R5cGUgL0ZvbnQgL1N1YnR5cGUgL1R5cGUxIC9CYXNlRm9udCAvSGVsdmV0aWNhID4+CmVuZG9iagp0cmFpbGVyCjw8IC9Sb290IDEgMCBSID4+CiUlRU9G",
+    "terms_status": "allowed",
+    "terms_url": "data:text/plain,Automated%20collection%20for%20this%20public%20fixture%20is%20allowed.",
+    "method": "official_pdf",
+    "access_scope": "public",
+    "enable_ocr": true,
+    "ocr_lang": "jpn+eng",
+    "ocr_max_pages": 3,
+    "ocr_dpi": 300,
+    "ocr_min_chars": 200,
+    "enabled": true
+  },
+  {
+    "id": "openai-news-rss",
+    "name": "OpenAI News",
+    "source_type": "official_company",
+    "url": "https://openai.com/news/rss.xml",
+    "terms_status": "unknown",
+    "method": "rss",
+    "access_scope": "public",
+    "enabled": false
+  },
+  {
+    "id": "example-public-html",
+    "name": "Example Public HTML",
+    "source_type": "database",
+    "url": "https://example.com/",
+    "method": "public_html",
+    "access_scope": "public",
+    "enabled": false
+  }
+]

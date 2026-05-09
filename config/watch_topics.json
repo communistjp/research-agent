@@ -1,0 +1,37 @@
+[
+  {
+    "id": "openai-news",
+    "name": "OpenAI public announcements",
+    "keywords": ["OpenAI", "API", "model"],
+    "source_ids": ["sample-official-rss", "sample-official-csv", "sample-official-pdf"],
+    "enabled": true
+  },
+  {
+    "id": "international-politics",
+    "name": "International politics and security",
+    "keywords": ["international politics", "foreign policy", "security", "geopolitics", "diplomacy", "国際政治", "外交", "安全保障"],
+    "source_ids": [],
+    "enabled": false
+  },
+  {
+    "id": "global-economy",
+    "name": "Global economy and policy",
+    "keywords": ["global economy", "monetary policy", "trade", "inflation", "labor market", "国際経済", "金融政策", "貿易", "雇用"],
+    "source_ids": [],
+    "enabled": false
+  },
+  {
+    "id": "ai-disability-welfare",
+    "name": "AI, disability welfare, and accessibility",
+    "keywords": ["AI", "disability", "welfare", "accessibility", "assistive technology", "障害福祉", "アクセシビリティ", "支援技術"],
+    "source_ids": [],
+    "enabled": false
+  },
+  {
+    "id": "interpersonal-support",
+    "name": "Interpersonal support and care practice",
+    "keywords": ["interpersonal support", "care work", "social work", "counseling", "peer support", "対人支援", "相談支援", "ケア", "ソーシャルワーク"],
+    "source_ids": [],
+    "enabled": false
+  }
+]

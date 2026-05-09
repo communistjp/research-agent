@@ -1,0 +1,11 @@
+node_modules/
+dist/
+tools/
+outputs/raw/**
+!outputs/raw/.gitkeep
+outputs/reports/**
+!outputs/reports/.gitkeep
+outputs/store/**
+!outputs/store/.gitkeep
+outputs/browser_tasks/**
+!outputs/browser_tasks/.gitkeep

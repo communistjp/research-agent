@@ -1,0 +1,14 @@
+{
+  "business_context": {
+    "core_business": "就労移行支援事業・障害福祉",
+    "default_linking_policy": "explicit_request_only",
+    "applies_to": [
+      "research_planning",
+      "answers",
+      "reports",
+      "inferences",
+      "recommendations"
+    ],
+    "instruction": "調査や回答は、明示的な依頼がある場合のみ本業と関連付ける。明示的な依頼がない場合は、調査テーマそのものの事実、推測、未確認点、出典を中心に整理する。"
+  }
+}
