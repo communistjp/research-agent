@@ -1,10 +1,36 @@
 import { normalizeAccessScope } from "../safety/policyCheck.ts";
 import { extractFactsFromText, summarizeText } from "../analyze/extractFacts.ts";
 
+function decodeHtmlEntities(text) {
+  const named = {
+    amp: "&",
+    lt: "<",
+    gt: ">",
+    quot: "\"",
+    apos: "'",
+    nbsp: " "
+  };
+  return String(text || "")
+    .replace(/&(#x[0-9a-f]+|#\d+|[a-z]+);/gi, (match, entity) => {
+      const lower = entity.toLowerCase();
+      if (lower.startsWith("#x")) {
+        const codePoint = Number.parseInt(lower.slice(2), 16);
+        return Number.isFinite(codePoint) && codePoint <= 0x10ffff ? String.fromCodePoint(codePoint) : match;
+      }
+      if (lower.startsWith("#")) {
+        const codePoint = Number.parseInt(lower.slice(1), 10);
+        return Number.isFinite(codePoint) && codePoint <= 0x10ffff ? String.fromCodePoint(codePoint) : match;
+      }
+      return named[lower] || match;
+    });
+}
+
 function stripHtml(html) {
-  return html
+  return decodeHtmlEntities(html)
+    .replace(/<!--[\s\S]*?-->/g, " ")
     .replace(/<script\b[\s\S]*?<\/script>/gi, " ")
     .replace(/<style\b[\s\S]*?<\/style>/gi, " ")
+    .replace(/<(br|p|div|li|h[1-6])\b[^>]*>/gi, "\n")
     .replace(/<[^>]+>/g, " ")
     .replace(/\s+/g, " ")
     .trim();
@@ -15,23 +41,31 @@ function titleFromHtml(html, fallback) {
   return match ? stripHtml(match[1]) : fallback;
 }
 
+function attrValue(tag, attrName) {
+  const pattern = new RegExp(`${attrName}\\s*=\\s*["']([^"']*)["']`, "i");
+  return tag.match(pattern)?.[1] || "";
+}
+
 function metaContent(html, name) {
-  const patterns = [
-    new RegExp(`<meta[^>]+name=["']${name}["'][^>]+content=["']([^"']+)["']`, "i"),
-    new RegExp(`<meta[^>]+property=["']${name}["'][^>]+content=["']([^"']+)["']`, "i")
-  ];
-  for (const pattern of patterns) {
-    const match = html.match(pattern);
-    if (match) return stripHtml(match[1]);
+  const metaTags = html.match(/<meta\b[^>]*>/gi) || [];
+  for (const tag of metaTags) {
+    const key = attrValue(tag, "name") || attrValue(tag, "property") || attrValue(tag, "itemprop");
+    if (key.toLowerCase() === name.toLowerCase()) return stripHtml(attrValue(tag, "content"));
   }
   return "";
 }
 
+function firstBlock(html, tagName) {
+  const match = html.match(new RegExp(`<${tagName}\\b[^>]*>([\\s\\S]*?)<\\/${tagName}>`, "i"));
+  return match ? match[1] : "";
+}
+
 function extractMainText(html) {
-  const paragraphMatches = [...html.matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi)];
-  const paragraphs = paragraphMatches.map((match) => stripHtml(match[1])).filter((text) => text.length > 40);
+  const scoped = firstBlock(html, "article") || firstBlock(html, "main") || html;
+  const paragraphMatches = [...scoped.matchAll(/<(p|li|h[1-3])\b[^>]*>([\s\S]*?)<\/\1>/gi)];
+  const paragraphs = paragraphMatches.map((match) => stripHtml(match[2])).filter((text) => text.length > 30);
   if (paragraphs.length > 0) return paragraphs.join(" ");
-  return stripHtml(html);
+  return stripHtml(scoped);
 }
 
 export async function collectPublicHtml(source, topic, now = new Date()) {

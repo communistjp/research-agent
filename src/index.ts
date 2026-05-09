@@ -9,6 +9,7 @@ import { collectRss } from "./collect/rss.ts";
 import { assessReliability } from "./analyze/assessReliability.ts";
 import { deduplicate } from "./analyze/deduplicate.ts";
 import { classifyTopic } from "./analyze/classifyTopic.ts";
+import { annotateRecordAccuracy } from "./analyze/evidenceQuality.ts";
 import { renderMarkdownReport } from "./report/markdownReport.ts";
 import { assertSourcePolicy } from "./safety/policyCheck.ts";
 import { checkRobotsAllowed } from "./safety/robotsCheck.ts";
@@ -17,6 +18,15 @@ import { persistRun } from "./store/jsonStore.ts";
 
 async function readJson(path) {
   return JSON.parse(await readFile(path, "utf8"));
+}
+
+async function readOptionalJson(path, fallback) {
+  try {
+    return await readJson(path);
+  } catch (error) {
+    if (error.code === "ENOENT") return fallback;
+    throw error;
+  }
 }
 
 async function preflightSource(source) {
@@ -89,6 +99,7 @@ async function main() {
   const topics = await readJson(join(root, "config", "watch_topics.json"));
   const sources = await readJson(join(root, "config", "sources.json"));
   const browserPolicy = await readJson(join(root, "config", "browser_policy.json"));
+  const researchPreferences = await readOptionalJson(join(root, "config", "research_preferences.json"), {});
   const allRecords = [];
   const allBrowserTasks = [];
 
@@ -138,13 +149,14 @@ async function main() {
 
     const records = deduplicate(collected)
       .map((record) => classifyTopic(record, topics))
-      .map((record) => assessReliability(record));
+      .map((record) => assessReliability(record))
+      .map((record) => annotateRecordAccuracy(record, topic));
     const rawPath = join(root, "outputs", "raw", `${topic.id}.json`);
     const reportPath = join(root, "outputs", "reports", `${topic.id}.md`);
     const browserTaskPath = await writeBrowserTasks(root, browserTasks, topic.id);
 
     await writeFile(rawPath, JSON.stringify(records, null, 2), "utf8");
-    await writeFile(reportPath, renderMarkdownReport(topic, records, now, browserTasks), "utf8");
+    await writeFile(reportPath, renderMarkdownReport(topic, records, now, browserTasks, researchPreferences), "utf8");
     allRecords.push(...records);
     allBrowserTasks.push(...browserTasks);
 
