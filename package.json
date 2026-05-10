@@ -12,6 +12,7 @@
     "news:schedule": "node dist/scheduler.js",
     "news:serve": "node dist/server.js",
     "pages:export": "node scripts/export-pages-news.mjs",
+    "pages:update": "npm run build && npm run news:refresh && npm run pages:export",
     "news:install-windows": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/install-windows-news-dashboard.ps1",
     "news:uninstall-windows": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/uninstall-windows-news-dashboard.ps1",
     "topic:add": "node dist/cli/topicAdd.js",
