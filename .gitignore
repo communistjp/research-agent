@@ -13,3 +13,7 @@ outputs/browser_tasks/**
 outputs/cache/**
 !outputs/cache/.gitkeep
 outputs/tmp/**
+outputs/public/**
+!outputs/public/.gitkeep
+outputs/logs/**
+!outputs/logs/.gitkeep

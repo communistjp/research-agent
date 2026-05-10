@@ -1,0 +1,349 @@
+{
+  "generated_at": "2026-05-10T11:42:48.139Z",
+  "topics": [
+    "openai-news",
+    "international-politics",
+    "global-economy"
+  ],
+  "counts": {
+    "records": 239,
+    "unique_records": 239,
+    "rss_articles": 72,
+    "manual_check_records": 34,
+    "browser_tasks": 15
+  },
+  "top": [
+    {
+      "id": "iran-hormuz-us",
+      "title": "イラン革命防衛隊、タンカーが攻撃されれば中東の米拠点を標的にすると警告",
+      "body": "5月9日（土）、イランメディアは、イラン革命防衛隊が自国のタンカーや商船が攻撃された場合、中東の米国施設や敵艦を標的にすると警告したと報じた。米国や同盟国による船舶攻撃への抑止メッセージで、ホルムズ海峡と湾岸の海上輸送リスクが改めて焦点になっている。原油・LNGの輸送路に関わるため、軍事的発言がエネルギー価格や保険料に波及しやすい局面だ。",
+      "time_label": "代表記事 05/10 14:54",
+      "representative_published_at": "2026-05-10T05:54:28.000Z",
+      "published_from": "2026-05-08T13:03:27.000Z",
+      "published_to": "2026-05-10T06:24:54.000Z",
+      "media_count": 4,
+      "article_count": 5,
+      "tags": [
+        "イラン",
+        "エネルギー",
+        "中東"
+      ],
+      "sources": [
+        {
+          "title": "イラン革命防衛隊、タンカーが攻撃されれば中東の米拠点を標的にすると警告",
+          "original_title": "Iran’s Revolutionary Guards threaten US sites in Middle East if tankers come under fire",
+          "source_name": "Theguardian Com",
+          "url": "https://www.theguardian.com/world/2026/may/10/iran-threatens-us-sites-in-middle-east-if-tankers-come-under-fire",
+          "published_at": "Sun, 10 May 2026 05:54:28 GMT",
+          "topic": "International politics and security"
+        },
+        {
+          "title": "イラン戦争速報: 革命防衛隊が船舶攻撃をめぐり米国に警告、イスラエルはレバノンを爆撃",
+          "original_title": "Iran war live: IRGC warns US against attacks on ships; Israel bombs Lebanon",
+          "source_name": "Aljazeera Com",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/5/10/iran-war-live-irgc-warns-us-against-attacks-on-ships-israel-bombs-lebanon?traffic_source=rss",
+          "published_at": "Sun, 10 May 2026 00:00:00 +0000",
+          "topic": "OpenAI public announcements"
+        },
+        {
+          "title": "トランプ氏、イラン体制によるホルムズ海峡攻撃を「軽い一撃」と表現",
+          "original_title": "Trump calls Iranian regime's attack in Strait of Hormuz a \"love tap\"",
+          "source_name": "Foundation for Defense of Democracies",
+          "url": "https://www.fdd.org/in_the_news/2026/05/08/trump-calls-iranian-regimes-attack-in-strait-of-hormuz-a-love-tap/",
+          "published_at": "Fri, 08 May 2026 13:03:27 +0000",
+          "topic": "International politics and security"
+        },
+        {
+          "title": "イラン・中東情勢をめぐる動き",
+          "original_title": "Saudi Aramco reports higher profits despite Iran war",
+          "source_name": "Ft Com",
+          "url": "https://www.ft.com/content/19c03559-1ed6-49bd-b2c1-98961d768f83",
+          "published_at": "Sun, 10 May 2026 06:24:54 GMT",
+          "topic": "International politics and security"
+        },
+        {
+          "title": "イラン・中東情勢をめぐる動き",
+          "original_title": "Iran Attacks U.S. Navy Vessels Transiting Strait of Hormuz",
+          "source_name": "Foundation for Defense of Democracies",
+          "url": "https://www.fdd.org/analysis/2026/05/08/iran-attacks-u-s-navy-vessels-transiting-strait-of-hormuz/",
+          "published_at": "Fri, 08 May 2026 15:26:08 +0000",
+          "topic": "International politics and security"
+        }
+      ]
+    },
+    {
+      "id": "putin-ukraine-war-end",
+      "title": "プーチン氏、ロシアの対ウクライナ戦争が終わりに近づいているとの認識を示す",
+      "body": "5月10日、プーチン大統領は、近年で最も規模を縮小した戦勝記念日パレードでウクライナへの勝利を約束した数時間後、記者団に戦争は終わりに近づいているとの見方を示した。軍事的勝利の演出と和平を示唆する発言が同じ日に出ており、国内向けの強硬姿勢と対外交渉の余地を同時に残す発信になっている。停戦や安全保障条件をめぐる次の具体発言が確認点だ。",
+      "time_label": "代表記事 05/10 13:17",
+      "representative_published_at": "2026-05-10T04:17:38.000Z",
+      "published_from": "2026-05-10T00:52:39.000Z",
+      "published_to": "2026-05-10T04:17:38.000Z",
+      "media_count": 2,
+      "article_count": 2,
+      "tags": [
+        "ウクライナ"
+      ],
+      "sources": [
+        {
+          "title": "プーチン氏、ロシアの対ウクライナ戦争が終わりに近づいているとの認識を示す",
+          "original_title": "Putin suggests Russia’s war on Ukraine ‘coming to an end’",
+          "source_name": "Aljazeera Com",
+          "url": "https://www.aljazeera.com/news/2026/5/10/putin-suggests-russias-war-on-ukraine-coming-to-an-end?traffic_source=rss",
+          "published_at": "Sun, 10 May 2026 04:17:38 +0000",
+          "topic": "Global economy and policy"
+        },
+        {
+          "title": "プーチン氏、ウクライナ戦争が終わりに近づいているとの認識を示す",
+          "original_title": "Vladimir Putin suggests Ukraine war is ‘coming to an end’",
+          "source_name": "Theguardian Com",
+          "url": "https://www.theguardian.com/world/2026/may/10/vladimir-putin-suggests-ukraine-war-is-coming-to-an-end",
+          "published_at": "Sun, 10 May 2026 00:52:39 GMT",
+          "topic": "International politics and security"
+        }
+      ]
+    },
+    {
+      "id": "brics-msme-finance",
+      "title": "インドがBRICSで中小企業金融の新議題を提示し、ロシア・中国など加盟国と共有",
+      "body": "5月9日、インドはBRICS内で中小企業金融を新たな協力課題として示した。2026年のBRICS議長国として、ロシアや中国を含む加盟国に金融アクセスと事業者支援を協力議題として広げる狙いがある。開発金融や通商協力を通じ、BRICSを政治会合だけでなく実務経済の枠組みにする動きとして見たい。",
+      "time_label": "代表記事 05/09 23:48",
+      "representative_published_at": "2026-05-09T14:48:21.000Z",
+      "published_from": "2026-05-08T08:33:02.000Z",
+      "published_to": "2026-05-09T14:48:21.000Z",
+      "media_count": 1,
+      "article_count": 2,
+      "tags": [
+        "BRICS",
+        "米中",
+        "ロシア"
+      ],
+      "sources": [
+        {
+          "title": "インドがBRICSで中小企業金融の新議題を提示し、ロシア・中国など加盟国と共有",
+          "original_title": "India's Major Initiative in BRICS: New MSME Finance Agenda Shared with Russia, China, and Other Members",
+          "source_name": "BRICS Information Sharing and Exchanging Platform",
+          "url": "https://www.brics-info.org/0f37691e4c49c3ed3f8567624ebda6d9/",
+          "published_at": "Sat, 09 May 2026 14:48:21 +0000",
+          "topic": "Global economy and policy"
+        },
+        {
+          "title": "BRICS関連の動き",
+          "original_title": "India targets big boost to MSME ties under 2026 BRICS Chairship",
+          "source_name": "BRICS Information Sharing and Exchanging Platform",
+          "url": "https://www.brics-info.org/055150ae5a6a18242840cfa86e6f438f/",
+          "published_at": "Fri, 08 May 2026 08:33:02 +0000",
+          "topic": "Global economy and policy"
+        }
+      ]
+    },
+    {
+      "id": "brics-iran-meeting",
+      "title": "イランのガリババディ外務次官が来週インドのBRICS会合に出席する見通し",
+      "body": "5月7日、イラン高官のBRICS会合参加が報じられた。中東危機のなかで、インド、ロシア、中国を含む外交調整の場としてBRICSが使われている。対米関係が緊張する局面で、イランがBRICSを通じて政治的な後ろ盾や経済的接点を広げようとしている点が重要だ。",
+      "time_label": "代表記事 05/07 16:55",
+      "representative_published_at": "2026-05-07T07:55:17.000Z",
+      "published_from": "2026-05-07T07:22:06.000Z",
+      "published_to": "2026-05-07T07:55:17.000Z",
+      "media_count": 1,
+      "article_count": 2,
+      "tags": [
+        "BRICS",
+        "イラン",
+        "ロシア",
+        "米中"
+      ],
+      "sources": [
+        {
+          "title": "イランのガリババディ外務次官が来週インドのBRICS会合に出席する見通し",
+          "original_title": "Deputy FM of Iran Gharibabadi likely to attend BRICS Summit in India next week: Sources",
+          "source_name": "BRICS Information Sharing and Exchanging Platform",
+          "url": "https://www.brics-info.org/c225a6bf096c0dace9b94e47ca935f38/",
+          "published_at": "Thu, 07 May 2026 07:55:17 +0000",
+          "topic": "Global economy and policy"
+        },
+        {
+          "title": "イランのアラグチ外相が5月のBRICS外相会合でインド訪問の可能性",
+          "original_title": "Iran's Araghchi could visit India for BRICS foreign ministers' meet in May",
+          "source_name": "BRICS Information Sharing and Exchanging Platform",
+          "url": "https://www.brics-info.org/5a5970437c31b6d9d5ad25fe59f2489a/",
+          "published_at": "Thu, 07 May 2026 07:22:06 +0000",
+          "topic": "Global economy and policy"
+        }
+      ]
+    },
+    {
+      "id": "ukraine-war-recruitment",
+      "title": "ウクライナが薬物依存者や病人を大規模に動員",
+      "body": "5月8日、ウクライナの兵員確保をめぐる報道が出た。戦争長期化により、動員対象の拡大、兵員の質、国内社会の受忍限度が同時に論点になっている。前線の持久力だけでなく、欧米支援の政治的な持続性にも関わる話だ。",
+      "time_label": "代表記事 05/08 23:48",
+      "representative_published_at": "2026-05-08T14:48:20.000Z",
+      "published_from": "2026-05-08T14:48:20.000Z",
+      "published_to": "2026-05-08T14:48:20.000Z",
+      "media_count": 1,
+      "article_count": 1,
+      "tags": [
+        "BRICS",
+        "ウクライナ"
+      ],
+      "sources": [
+        {
+          "title": "ウクライナが薬物依存者や病人を大規模に動員",
+          "original_title": "Ukraine mass recruits drug addicts and ill patients",
+          "source_name": "BRICS Joint MFA Portal",
+          "url": "https://infobrics.org/en/post/94833/",
+          "published_at": "Fri, 08 May 2026 17:48:20 +0300",
+          "topic": "Global economy and policy"
+        }
+      ]
+    },
+    {
+      "id": "brics-india-russia-steel",
+      "title": "インドとロシアが鉄鋼分野の円卓会議を開き、協力深化を協議",
+      "body": "5月8日、インドとロシアは鉄鋼分野の円卓会議を開いた。供給網、技術、研究協力を議題に、産業面での協力深化を図っている。対ロ制裁下でもBRICS圏内で実物産業の結びつきを保つ動きとして、通商と制裁回避の両面から確認したい。",
+      "time_label": "代表記事 05/08 02:52",
+      "representative_published_at": "2026-05-07T17:52:37.000Z",
+      "published_from": "2026-05-07T17:52:37.000Z",
+      "published_to": "2026-05-07T17:52:37.000Z",
+      "media_count": 1,
+      "article_count": 1,
+      "tags": [
+        "BRICS",
+        "ロシア"
+      ],
+      "sources": [
+        {
+          "title": "インドとロシアが鉄鋼分野の円卓会議を開き、協力深化を協議",
+          "original_title": "India, Russia Hold Steel Sector Round Table; Focus on Deeper Cooperation",
+          "source_name": "BRICS Joint MFA Portal",
+          "url": "https://infobrics.org/en/post/94664/",
+          "published_at": "Thu, 07 May 2026 20:52:37 +0300",
+          "topic": "Global economy and policy"
+        }
+      ]
+    },
+    {
+      "id": "us-economy-trump",
+      "title": "米有権者の過半数、トランプ氏の経済運営を不支持",
+      "body": "5月10日、FTの調査で米有権者の過半数がトランプ氏の経済運営を不支持と報じられた。イラン情勢、インフレ、生活費への不満が評価を押し下げており、外交危機が国内経済評価に接続している。中間選挙に向けて、関税、エネルギー価格、金融市場の反応が政権支持率を左右し得る。",
+      "time_label": "代表記事 05/10 13:01",
+      "representative_published_at": "2026-05-10T04:01:01.000Z",
+      "published_from": "2026-05-10T04:01:01.000Z",
+      "published_to": "2026-05-10T04:01:01.000Z",
+      "media_count": 1,
+      "article_count": 1,
+      "tags": [
+        "イラン"
+      ],
+      "sources": [
+        {
+          "title": "米有権者の過半数、トランプ氏の経済運営を不支持",
+          "original_title": "More than half of US voters disapprove of Trump’s handling of economy — FT poll",
+          "source_name": "Ft Com",
+          "url": "https://www.ft.com/content/d08de75e-4a62-4475-9754-7f6d186f7eeb",
+          "published_at": "Sun, 10 May 2026 04:01:01 GMT",
+          "topic": "International politics and security"
+        }
+      ]
+    },
+    {
+      "id": "ndb-credit-rating",
+      "title": "新開発銀行、中国誠信国際からAAA格付けを取得、見通しは安定的",
+      "body": "4月20日、新開発銀行は中国の格付け会社からAAA格付けを得た。BRICS系金融機関として、中国市場での資金調達力を高める材料になる。加盟国の開発金融をドル建て市場だけに依存させないというBRICS側の制度づくりともつながる。",
+      "time_label": "代表記事 04/20 12:24",
+      "representative_published_at": "2026-04-20T03:24:06.000Z",
+      "published_from": "2026-04-20T03:24:06.000Z",
+      "published_to": "2026-04-20T03:24:06.000Z",
+      "media_count": 1,
+      "article_count": 1,
+      "tags": [
+        "BRICS",
+        "米中"
+      ],
+      "sources": [
+        {
+          "title": "新開発銀行、中国誠信国際からAAA格付けを取得、見通しは安定的",
+          "original_title": "New Development Bank Receives ‘AAA’ Credit Rating from China Chengxin International (CCXI) with Stable Outlook",
+          "source_name": "New Development Bank",
+          "url": "https://www.ndb.int/news/new-development-bank-receives-aaa-credit-rating-from-china-chengxin-international-ccxi-with-stable-outlook/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=new-development-bank-receives-aaa-credit-rating-from-china-chengxin-international-ccxi-with-stable-outlook",
+          "published_at": "Mon, 20 Apr 2026 03:24:06 +0000",
+          "topic": "Global economy and policy"
+        }
+      ]
+    },
+    {
+      "id": "brics:brics-grand-summit-delhi-amid",
+      "title": "中東危機のなかデリーでBRICS大型会合、インド外交に国際的注目",
+      "body": "5月10日時点で、BRICS内の制度、外交、開発金融をめぐる動きが出ている。加盟国間の協力が会議声明にとどまるのか、資金調達や通商実務に移るのかが焦点になる。対米欧関係やドル依存の低下をめぐる議論とも接続しやすい。",
+      "time_label": "代表記事 05/10 02:00",
+      "representative_published_at": "2026-05-09T17:00:52.000Z",
+      "published_from": "2026-05-09T17:00:52.000Z",
+      "published_to": "2026-05-09T17:00:52.000Z",
+      "media_count": 1,
+      "article_count": 1,
+      "tags": [
+        "BRICS",
+        "中東"
+      ],
+      "sources": [
+        {
+          "title": "中東危機のなかデリーでBRICS大型会合、インド外交に国際的注目",
+          "original_title": "BRICS Grand Summit in Delhi Amid Middle East Crisis, World's Eyes on India's Diplomacy",
+          "source_name": "BRICS Information Sharing and Exchanging Platform",
+          "url": "https://www.brics-info.org/32b8afcc3ddba71583b2fa7c84339410/",
+          "published_at": "Sat, 09 May 2026 17:00:52 +0000",
+          "topic": "Global economy and policy"
+        }
+      ]
+    },
+    {
+      "id": "us-counterterror-muslim-brotherhood",
+      "title": "米国の新対テロ戦略、ムスリム同胞団を重点対象に",
+      "body": "5月9日、米国の新たな対テロ戦略でムスリム同胞団が重点対象として扱われた。中東政策と国内安全保障をつなぐ論点で、同盟国との情報共有や制裁指定の範囲に影響する可能性がある。イスラム政治運動をどこまで安全保障対象として扱うかが、地域外交の摩擦点になり得る。",
+      "time_label": "代表記事 05/09 02:50",
+      "representative_published_at": "2026-05-08T17:50:41.000Z",
+      "published_from": "2026-05-08T17:50:41.000Z",
+      "published_to": "2026-05-08T17:50:41.000Z",
+      "media_count": 1,
+      "article_count": 1,
+      "tags": [
+        "イラン"
+      ],
+      "sources": [
+        {
+          "title": "米国の新対テロ戦略、ムスリム同胞団を重点対象に",
+          "original_title": "New U.S. Counterterrorism Strategy Spotlights Muslim Brotherhood",
+          "source_name": "Foundation for Defense of Democracies",
+          "url": "https://www.fdd.org/analysis/2026/05/08/new-u-s-counterterrorism-strategy-spotlights-muslim-brotherhood/",
+          "published_at": "Fri, 08 May 2026 17:50:41 +0000",
+          "topic": "International politics and security"
+        }
+      ]
+    },
+    {
+      "id": "middle-east-europe",
+      "title": "欧州は中東で自ら影響力を失いつつある",
+      "body": "5月8日、欧州の中東関与が弱まっているとの分析が出た。米国、イスラエル、湾岸諸国が主導する局面で、欧州の発言力低下が問題視されている。ガザ、イラン、エネルギー安全保障が重なるなか、欧州が制裁や人道外交以外の実効的な手段を持てるかが問われている。",
+      "time_label": "代表記事 05/08 22:26",
+      "representative_published_at": "2026-05-08T13:26:04.000Z",
+      "published_from": "2026-05-08T13:26:04.000Z",
+      "published_to": "2026-05-08T13:26:04.000Z",
+      "media_count": 1,
+      "article_count": 1,
+      "tags": [
+        "通商",
+        "中東"
+      ],
+      "sources": [
+        {
+          "title": "欧州は中東で自ら影響力を失いつつある",
+          "original_title": "Europe is writing itself out of the Middle East",
+          "source_name": "Foundation for Defense of Democracies",
+          "url": "https://www.fdd.org/analysis/2026/05/08/europe-is-writing-itself-out-of-the-middle-east/",
+          "published_at": "Fri, 08 May 2026 13:26:04 +0000",
+          "topic": "International politics and security"
+        }
+      ]
+    }
+  ]
+}

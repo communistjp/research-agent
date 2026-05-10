@@ -10,7 +10,9 @@ import { assessReliability } from "./analyze/assessReliability.ts";
 import { deduplicate } from "./analyze/deduplicate.ts";
 import { classifyTopic } from "./analyze/classifyTopic.ts";
 import { annotateRecordAccuracy } from "./analyze/evidenceQuality.ts";
+import { isRelevantToTopic } from "./analyze/topicRelevance.ts";
 import { renderMarkdownReport } from "./report/markdownReport.ts";
+import { writeMobileNewsReport } from "./report/mobileNewsReport.ts";
 import { assertSourcePolicy } from "./safety/policyCheck.ts";
 import { checkRobotsAllowed } from "./safety/robotsCheck.ts";
 import { checkSourceTerms } from "./safety/sourceTermsCheck.ts";
@@ -156,6 +158,7 @@ async function main() {
     }
 
     const records = deduplicate(collected)
+      .filter((record) => isRelevantToTopic(record, topic))
       .map((record) => classifyTopic(record, topics))
       .map((record) => assessReliability(record))
       .map((record) => annotateRecordAccuracy(record, topic));
@@ -180,7 +183,15 @@ async function main() {
     records: allRecords,
     browser_tasks: allBrowserTasks
   });
+  const storedRecords = await readOptionalJson(storePaths.recordsPath, allRecords);
+  const mobileReportPath = await writeMobileNewsReport(root, {
+    records: storedRecords,
+    topics,
+    generatedAt: now,
+    browserTasks: allBrowserTasks
+  });
   console.log(`Updated persistent store at ${storePaths.recordsPath}`);
+  console.log(`Wrote mobile news dashboard to ${mobileReportPath}`);
 }
 
 main().catch((error) => {
