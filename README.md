@@ -71,9 +71,3 @@ cmd /c npm run source:add -- --name "Candidate" --url "https://example.org/" --s
 ```
 
 `--enable` を付けても、規約または robots.txt がブロックする場合、あるいは確認不能な場合は無効状態で追加されます。後から人間が確認して `sources.json` の `enabled` と `terms_status` を更新します。
-
-## Research Preferences
-
-調査や回答は、明示的な依頼がある場合のみ、ユーザーの本業である就労移行支援事業・障害福祉と関連付けます。
-
-デフォルトでは、国際政治、経済、AI、政策、技術、対人支援などのテーマも、そのテーマ自体の事実、推測、未確認点、出典を中心に整理します。この方針は `config/research_preferences.json` にも保存しています。
