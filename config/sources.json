@@ -55,5 +55,3456 @@
     "method": "public_html",
     "access_scope": "public",
     "enabled": false
+  },
+  {
+    "id": "likes-nikkei-com",
+    "name": "Nikkei Com",
+    "source_type": "news_media",
+    "url": "https://nikkei.com/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 141,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "global-economy",
+        "international-politics",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://www.nikkei.com/article/DGXZQOUA018ST0R00C25A8000000/",
+      "https://www.nikkei.com/article/DGXZQOUA245640U5A720C2000000/",
+      "https://www.nikkei.com/article/DGXZQOGM155JS0V10C25A7000000/",
+      "https://www.nikkei.com/article/DGXZQOUB0973X0Z00C25A7000000/?n_cid=SNSTW001&n_tw=1752436995",
+      "https://www.nikkei.com/article/DGXZQOGN090A00Z00C25A5000000/?n_cid=SNSTW001&n_tw=1750842075"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "public_html_candidate",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://nikkei.com/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 0,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.nikkei.com/",
+        "content_type": "text/html; charset=utf-8",
+        "title": "日本経済新聞 - ニュース・速報 最新情報",
+        "error": ""
+      },
+      "terms": {
+        "decision": "no_prohibition_detected_in_sample",
+        "url": "https://www.nikkei.com/business/legal/",
+        "status": 200,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://www.nikkei.com/article/DGXZQOUA018ST0R00C25A8000000/",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "自民税調、異例の夏開催へ ガソリン減税法案を協議 - 日本経済新聞"
+        },
+        {
+          "url": "https://www.nikkei.com/article/DGXZQOUA245640U5A720C2000000/",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "日米関税合意、投資枠組みに食い違い 適用日は不明 - 日本経済新聞"
+        },
+        {
+          "url": "https://www.nikkei.com/article/DGXZQOGM155JS0V10C25A7000000/",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "中国、アステラス製薬社員に懲役3年6月 スパイ罪で実刑判決 - 日本経済新聞"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-news-yahoo-co-jp",
+    "name": "News Yahoo Co Jp",
+    "source_type": "news_media",
+    "url": "https://news.yahoo.co.jp/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 67,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "global-economy",
+        "international-politics",
+        "interpersonal-support",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://news.yahoo.co.jp/pickup/6575967",
+      "https://news.yahoo.co.jp/articles/06e14ae7a98866d51ae15b0b6cbc167f5356b798",
+      "https://news.yahoo.co.jp/articles/b591ffe87be3d766f86b4566c7d4fca2f73f527a",
+      "https://news.yahoo.co.jp/articles/36fa1905c3808a94d45f409eec0b19420e00c32e?source=sns&dv=pc&mid=other&date=20250610&ctg=dom&bt=tw_up",
+      "https://news.yahoo.co.jp/articles/352bdcaad2f0be433b1c18d3ee7a1f3171c7d8e8?source=sns&dv=pc&mid=other&date=20250523&ctg=dom&bt=tw_up"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "public_html_candidate_terms_unresolved",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://news.yahoo.co.jp/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 7,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://news.yahoo.co.jp/",
+        "content_type": "text/html;charset=UTF-8",
+        "title": "Yahoo!ニュース",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://news.yahoo.co.jp/pickup/6575967",
+          "ok": false,
+          "status": 404,
+          "content_type": "text/html;charset=UTF-8",
+          "title": "Yahoo!ニュース"
+        },
+        {
+          "url": "https://news.yahoo.co.jp/articles/06e14ae7a98866d51ae15b0b6cbc167f5356b798",
+          "ok": false,
+          "status": 404,
+          "content_type": "text/html;charset=UTF-8",
+          "title": "Yahoo!ニュース"
+        },
+        {
+          "url": "https://news.yahoo.co.jp/articles/b591ffe87be3d766f86b4566c7d4fca2f73f527a",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html;charset=UTF-8",
+          "title": "野党、ガソリン減税法案審議へ委員会要求（共同通信） - Yahoo!ニュース"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-bloomberg-com",
+    "name": "Bloomberg Com",
+    "source_type": "news_media",
+    "url": "https://bloomberg.com/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 55,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "global-economy",
+        "international-politics",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://www.bloomberg.com/jp/news/articles/2026-04-15/TDICXAT96OSJ00?taid=69ded8a24cd2160001d63715&utm_campaign=trueanthem&utm_content=japan&utm_medium=social&utm_source=twitter",
+      "https://www.bloomberg.com/jp/news/articles/2025-07-27/T02DRFGPWCJS00?taid=68864d2c85489b0001f8e0b6&utm_campaign=trueanthem&utm_content=japan&utm_medium=social&utm_source=twitter",
+      "https://www.bloomberg.com/jp/news/articles/2025-07-25/SZVT2HGPL3YM00",
+      "https://www.bloomberg.com/jp/news/articles/2025-07-24/SZWLIUGPFHVX00?taid=68824ae8636c000001062439&utm_campaign=trueanthem&utm_content=japan&utm_medium=social&utm_source=twitter",
+      "https://www.bloomberg.com/jp/news/articles/2025-07-17/SZK1JGGQ7LAG00?taid=68797d51ae8665000187cb82&utm_campaign=trueanthem&utm_content=japan&utm_medium=social&utm_source=twitter"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "keep_manual_access_limited",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://bloomberg.com/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 26,
+        "error": ""
+      },
+      "homepage": {
+        "ok": false,
+        "status": 403,
+        "final_url": "https://www.bloomberg.com/",
+        "content_type": "text/html",
+        "title": "Bloomberg - Are you a robot?",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://www.bloomberg.com/jp/news/articles/2026-04-15/TDICXAT96OSJ00?taid=69ded8a24cd2160001d63715&utm_campaign=trueanthem&utm_content=japan&utm_medium=social&utm_source=twitter",
+          "ok": false,
+          "status": 403,
+          "content_type": "text/html",
+          "title": "Bloomberg - Are you a robot?"
+        },
+        {
+          "url": "https://www.bloomberg.com/jp/news/articles/2025-07-27/T02DRFGPWCJS00?taid=68864d2c85489b0001f8e0b6&utm_campaign=trueanthem&utm_content=japan&utm_medium=social&utm_source=twitter",
+          "ok": false,
+          "status": 403,
+          "content_type": "text/html",
+          "title": "Bloomberg - Are you a robot?"
+        },
+        {
+          "url": "https://www.bloomberg.com/jp/news/articles/2025-07-25/SZVT2HGPL3YM00",
+          "ok": false,
+          "status": 403,
+          "content_type": "text/html",
+          "title": "Bloomberg - Are you a robot?"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-news-web-nhk",
+    "name": "News Web Nhk",
+    "source_type": "news_media",
+    "url": "https://news.web.nhk/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 32,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "global-economy",
+        "international-politics",
+        "interpersonal-support",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://news.web.nhk/newsweb/na/na-k10014796041000",
+      "https://news.web.nhk/newsweb/na/na-k10014787601000",
+      "https://news.web.nhk/newsweb/na/na-k10014776271000",
+      "https://news.web.nhk/newsweb/na/na-k10014770621000",
+      "https://news.web.nhk/newsweb/na/na-k10014770781000"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "public_html_candidate_terms_unresolved",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://news.web.nhk/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 0,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://news.web.nhk/newsweb",
+        "content_type": "text/html; charset=utf-8",
+        "title": "NHKニュース 速報・最新情報",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://news.web.nhk/newsweb/na/na-k10014796041000",
+          "ok": false,
+          "status": 404,
+          "content_type": "text/html",
+          "title": "エラー 404 Not Found | NHK"
+        },
+        {
+          "url": "https://news.web.nhk/newsweb/na/na-k10014787601000",
+          "ok": false,
+          "status": 404,
+          "content_type": "text/html",
+          "title": "エラー 404 Not Found | NHK"
+        },
+        {
+          "url": "https://news.web.nhk/newsweb/na/na-k10014776271000",
+          "ok": false,
+          "status": 404,
+          "content_type": "text/html",
+          "title": "エラー 404 Not Found | NHK"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-aljazeera-com",
+    "name": "Aljazeera Com",
+    "source_type": "news_media",
+    "url": "https://aljazeera.com/rss",
+    "terms_status": "unknown",
+    "method": "rss",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_rss_after_verification",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "RSS feed endpoint was discovered by enabled-source verification; source remains subject to ongoing terms and robots checks before each collection.",
+      "rss_promoted_at": "2026-05-10T06:54:13.371Z"
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 29,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "global-economy",
+        "international-politics",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://www.aljazeera.com/news/liveblog/2026/5/5/iran-war-live-washington-tehran-trade-threats-over-strait-of-hormuz?update=4545956",
+      "https://www.aljazeera.com/news/liveblog/2026/5/4/iran-war-live-tehran-says-trumps-hormuz-mission-violates-ceasefire?update=4542622",
+      "https://www.aljazeera.com/news/liveblog/2026/4/14/iran-war-live-trump-claims-tehran-wants-a-deal-amid-us-blockade-of-hormuz?update=4491364",
+      "https://www.aljazeera.com/news/liveblog/2026/4/14/iran-war-live-trump-claims-tehran-wants-a-deal-amid-us-blockade-of-hormuz",
+      "https://www.aljazeera.com/news/liveblog/2026/4/13/iran-war-live-us-military-to-block-iranian-port-traffic-in-hormuz-strait"
+    ],
+    "homepage_url": "https://aljazeera.com/",
+    "rss_verification": {
+      "verified_at": "2026-05-10T06:54:13.371Z",
+      "verification_report": "outputs/raw/enabled-source-verification-2026-05-10T06-50-55Z.json",
+      "feed_url": "https://aljazeera.com/rss",
+      "robots": {
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "url": "https://aljazeera.com/robots.txt",
+        "notes": "5 matching robots rules sampled."
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.aljazeera.com/",
+        "content_type": "text/html; charset=utf-8",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "notes": "No terms/legal link discovered from homepage sample."
+      },
+      "recommendation": "promote_to_rss_after_review"
+    }
+  },
+  {
+    "id": "likes-jiji-com",
+    "name": "Jiji Com",
+    "source_type": "news_media",
+    "url": "https://www.jiji.com/rss/ranking.rdf",
+    "terms_status": "unknown",
+    "method": "rss",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_rss_after_manual_check",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "RSS feed endpoint was found during manual source check; source remains subject to ongoing terms and robots checks before each collection.",
+      "rss_promoted_at": "2026-05-10T07:12:01.095Z"
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 26,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "global-economy",
+        "international-politics",
+        "interpersonal-support",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://www.jiji.com/jc/article?k=2025072300279&g=flash",
+      "https://www.jiji.com/jc/article?k=2025072300215&g=int",
+      "https://www.jiji.com/jc/article?k=2025070400134&g=int",
+      "https://www.jiji.com/jc/article?k=2025070100684&g=eco",
+      "https://www.jiji.com/jc/article?k=2025062000499&g=flash"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:10:56.478Z",
+      "decision": "rss_candidate",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://jiji.com/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 9,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.jiji.com/",
+        "content_type": "text/html; charset=UTF-8",
+        "title": "時事ドットコム：時事通信社が運営するニュースサイト",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": true,
+        "url": "https://www.jiji.com/rss/ranking.rdf"
+      },
+      "examples_checked": [
+        {
+          "url": "https://www.jiji.com/jc/article?k=2025072300279&g=flash",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "title": "【速報】日本政府関係者は米政権による日本の自動車関税は１５％と説明した：時事ドットコム"
+        },
+        {
+          "url": "https://www.jiji.com/jc/article?k=2025072300215&g=int",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "title": "日米、相互関税１５％で合意 車も同率、日本はコメ輸入拡大：時事ドットコム"
+        },
+        {
+          "url": "https://www.jiji.com/jc/article?k=2025070400134&g=int",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "title": "トランプ減税、実現へ 議会通過、米政権に追い風―財政赤字の拡大必至：時事ドットコム"
+        }
+      ]
+    },
+    "homepage_url": "https://jiji.com/",
+    "rss_verification": {
+      "verified_at": "2026-05-10T07:12:01.095Z",
+      "verification_report": "outputs/raw/manual-source-check-2026-05-10T07-11-27Z.json",
+      "feed_url": "https://www.jiji.com/rss/ranking.rdf",
+      "robots": {
+        "url": "https://jiji.com/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 9,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.jiji.com/",
+        "content_type": "text/html; charset=UTF-8",
+        "title": "時事ドットコム：時事通信社が運営するニュースサイト",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "recommendation": "promote_to_rss_after_manual_check"
+    }
+  },
+  {
+    "id": "likes-jp-reuters-com",
+    "name": "Jp Reuters Com",
+    "source_type": "news_media",
+    "url": "https://jp.reuters.com/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 26,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "global-economy",
+        "international-politics",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://jp.reuters.com/markets/commodities/TH7J2TZOLJMELJJEYWV4KF26OQ-2026-04-13/",
+      "https://jp.reuters.com/markets/commodities/YER453CIXRJSJDBWUKENUZA33Q-2026-04-13/?taid=69dd44d9d3f1550001a85f66&utm_campaign=trueAnthem:+New+Content+(Feed)&utm_medium=trueAnthem&utm_source=twitter",
+      "https://jp.reuters.com/markets/commodities/IP5SHJATEJPX3GTUKWZJWVHHU4-2025-07-23/",
+      "https://jp.reuters.com/world/us/UHMNGJW7PFPVFAG4NBSIKBXBB4-2025-07-01/?taid=68643a0db5242f0001e2f44b&utm_campaign=trueAnthem:+New+Content+(Feed)&utm_medium=trueAnthem&utm_source=twitter",
+      "https://jp.reuters.com/markets/japan/funds/QSEGK6GTLJP4PP55OHG6EY5HTE-2025-07-01/"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "keep_manual_access_limited",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://jp.reuters.com/robots.txt",
+        "decision": "unknown",
+        "status": 401,
+        "matching_rules": 0,
+        "error": ""
+      },
+      "homepage": {
+        "ok": false,
+        "status": 401,
+        "final_url": "https://jp.reuters.com/",
+        "content_type": "text/html;charset=utf-8",
+        "title": "reuters.com",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://jp.reuters.com/markets/commodities/TH7J2TZOLJMELJJEYWV4KF26OQ-2026-04-13/",
+          "ok": false,
+          "status": 401,
+          "content_type": "text/html;charset=utf-8",
+          "title": "reuters.com"
+        },
+        {
+          "url": "https://jp.reuters.com/markets/commodities/YER453CIXRJSJDBWUKENUZA33Q-2026-04-13/?taid=69dd44d9d3f1550001a85f66&utm_campaign=trueAnthem:+New+Content+(Feed)&utm_medium=trueAnthem&utm_source=twitter",
+          "ok": false,
+          "status": 401,
+          "content_type": "text/html;charset=utf-8",
+          "title": "reuters.com"
+        },
+        {
+          "url": "https://jp.reuters.com/markets/commodities/IP5SHJATEJPX3GTUKWZJWVHHU4-2025-07-23/",
+          "ok": false,
+          "status": 401,
+          "content_type": "text/html;charset=utf-8",
+          "title": "reuters.com"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-sankei-com",
+    "name": "Sankei Com",
+    "source_type": "news_media",
+    "url": "https://sankei.com/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 21,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "global-economy",
+        "international-politics",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://www.sankei.com/article/20250703-HAFEKIQRFZJOZH2BZUAR4KHOA4/?outputType=theme_election2025",
+      "https://www.sankei.com/article/20250627-KVLCGBNPIBD25GXNVX3WCBWKXI/",
+      "https://www.sankei.com/article/20250617-JNLILKPCBJK5VDUQFL4AMSLSQA/",
+      "https://www.sankei.com/article/20250603-RNSGX2EP2JICTEXFTSTLWG5JVI/",
+      "https://www.sankei.com/article/20250603-FESYBTQ6J5DQXLUFYKGAVG7GRE/"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "public_html_candidate_terms_unresolved",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://sankei.com/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 7,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.sankei.com/",
+        "content_type": "text/html; charset=utf-8",
+        "title": "産経ニュース",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://www.sankei.com/article/20250703-HAFEKIQRFZJOZH2BZUAR4KHOA4/?outputType=theme_election2025",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "中国、参院選で石破政権の存続望む 「日本政府が安定することで中日関係も安定」 - 産経ニュース"
+        },
+        {
+          "url": "https://www.sankei.com/article/20250627-KVLCGBNPIBD25GXNVX3WCBWKXI/",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "フェンタニル「日本経由の密輸防止すべき」 グラス駐日米大使が投稿「中国共産党が関与」 - 産経ニュース"
+        },
+        {
+          "url": "https://www.sankei.com/article/20250617-JNLILKPCBJK5VDUQFL4AMSLSQA/",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "石破首相、訪問中のカナダでトランプ米大統領と30分間会談 高関税見直しに向け協議 - 産経ニュース"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-reuters-com",
+    "name": "Reuters Com",
+    "source_type": "news_media",
+    "url": "https://reuters.com/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 20,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "global-economy",
+        "international-politics",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://www.reuters.com/world/asia-pacific/trump-says-us-start-blockading-strait-hormuz-2026-04-12/?taid=69db99b66196360001554798&utm_campaign=trueAnthem:+Trending+Content&utm_medium=trueAnthem&utm_source=twitter",
+      "https://www.reuters.com/world/asia-pacific/iran-wants-lebanon-included-any-ceasefire-sources-say-2026-03-25/?taid=69c489c4d89e3600013274ba&utm_campaign=trueAnthem:+Trending+Content&utm_medium=trueAnthem&utm_source=twitter",
+      "https://www.reuters.com/world/us/elon-musk-leaving-trump-administration-white-house-official-confirms-2025-05-29/",
+      "https://www.reuters.com/world/asia-pacific/trump-hit-iran-harder-if-tehran-does-not-accept-defeat-white-house-says-2026-03-25/",
+      "https://www.reuters.com/world/middle-east/trump-threatens-iran-with-power-plant-strikes-over-hormuz-blockade-2026-03-22/"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "keep_manual_access_limited",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://reuters.com/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 24,
+        "error": ""
+      },
+      "homepage": {
+        "ok": false,
+        "status": 401,
+        "final_url": "https://www.reuters.com/",
+        "content_type": "text/html;charset=utf-8",
+        "title": "reuters.com",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://www.reuters.com/world/asia-pacific/trump-says-us-start-blockading-strait-hormuz-2026-04-12/?taid=69db99b66196360001554798&utm_campaign=trueAnthem:+Trending+Content&utm_medium=trueAnthem&utm_source=twitter",
+          "ok": false,
+          "status": 401,
+          "content_type": "text/html;charset=utf-8",
+          "title": "reuters.com"
+        },
+        {
+          "url": "https://www.reuters.com/world/asia-pacific/iran-wants-lebanon-included-any-ceasefire-sources-say-2026-03-25/?taid=69c489c4d89e3600013274ba&utm_campaign=trueAnthem:+Trending+Content&utm_medium=trueAnthem&utm_source=twitter",
+          "ok": false,
+          "status": 401,
+          "content_type": "text/html;charset=utf-8",
+          "title": "reuters.com"
+        },
+        {
+          "url": "https://www.reuters.com/world/us/elon-musk-leaving-trump-administration-white-house-official-confirms-2025-05-29/",
+          "ok": false,
+          "status": 401,
+          "content_type": "text/html;charset=utf-8",
+          "title": "reuters.com"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-fukushishimbun-com",
+    "name": "Fukushishimbun Com",
+    "source_type": "news_media",
+    "url": "https://fukushishimbun.com/feed/",
+    "terms_status": "unknown",
+    "method": "rss",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_rss_after_verification",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "RSS feed endpoint was discovered by enabled-source verification; source remains subject to ongoing terms and robots checks before each collection.",
+      "rss_promoted_at": "2026-05-10T06:54:13.371Z"
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 15,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "global-economy",
+        "interpersonal-support"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://fukushishimbun.com/jinzai/38637?utm_source=x&utm_medium=sharebutton&utm_campaign=regular",
+      "https://fukushishimbun.com/series06/32856",
+      "https://fukushishimbun.com/series06/32517",
+      "https://fukushishimbun.com/series06/31928",
+      "https://fukushishimbun.com/topics/30969"
+    ],
+    "homepage_url": "https://fukushishimbun.com/",
+    "rss_verification": {
+      "verified_at": "2026-05-10T06:54:13.371Z",
+      "verification_report": "outputs/raw/enabled-source-verification-2026-05-10T06-50-55Z.json",
+      "feed_url": "https://fukushishimbun.com/feed/",
+      "robots": {
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "url": "https://fukushishimbun.com/robots.txt",
+        "notes": "1 matching robots rules sampled."
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://fukushishimbun.com/",
+        "content_type": "text/html; charset=UTF-8",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "notes": "No terms/legal link discovered from homepage sample."
+      },
+      "recommendation": "promote_to_rss_after_review"
+    }
+  },
+  {
+    "id": "likes-zakzak-co-jp",
+    "name": "Zakzak Co Jp",
+    "source_type": "news_media",
+    "url": "https://zakzak.co.jp/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 12,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "global-economy",
+        "international-politics",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://www.zakzak.co.jp/article/20250123-6LZ42O5HRFO5XLGTHWT6PX57M4/",
+      "https://www.zakzak.co.jp/article/20241004-5ZLXLCKDGNJ35MZDT6EJGLTUDM/",
+      "https://www.zakzak.co.jp/article/20230615-R77KUXUPZRO3JCHSSERZAARK7Y/2/",
+      "https://www.zakzak.co.jp/article/20230203-2X5CSTAOLFN5BL6ZWOFJ6QATHU/",
+      "https://www.zakzak.co.jp/article/20221119-BQGENO53CZO55D4ZO66BWTOIRA/"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "public_html_candidate_terms_unresolved",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://zakzak.co.jp/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 7,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.zakzak.co.jp/",
+        "content_type": "text/html; charset=utf-8",
+        "title": "zakⅡ｜エンタメ情報の舞台裏を取材し独自の切り口で深掘り",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://www.zakzak.co.jp/article/20250123-6LZ42O5HRFO5XLGTHWT6PX57M4/",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "【ニュース裏表 平井文夫】トランプ氏の米大統領就任で世界は良くなる？ LGBT・移民・環境…欧米の「行き過ぎた」政策を修正 石破首相は乗り遅れるな（1/2ページ） - zakⅡ"
+        },
+        {
+          "url": "https://www.zakzak.co.jp/article/20241004-5ZLXLCKDGNJ35MZDT6EJGLTUDM/",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "石破首相が突如豹変、かえって「経済オンチ」露呈…追加利上げに否定的な発言で日銀に「圧力」 首相が言及の〝禁じ手〟市場は逆ショック（1/2ページ） - zakⅡ"
+        },
+        {
+          "url": "https://www.zakzak.co.jp/article/20230615-R77KUXUPZRO3JCHSSERZAARK7Y/2/",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "【日本の解き方】日本の海外支援は〝バラマキ〟か 国内は増税で負担増、利子減免も国民負担は限定的 中国対抗で見かけ上の数字も（2/2ページ） - zakⅡ"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-wsj-com",
+    "name": "Wsj Com",
+    "source_type": "news_media",
+    "url": "https://wsj.com/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 10,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "global-economy",
+        "international-politics",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://www.wsj.com/tech/meta-to-halt-political-advertising-in-eu-citing-transparency-rules-09e9eb79?mod=e2tw",
+      "https://www.wsj.com/us-news/education/school-choice-tax-credit-private-tuition-democrats-31bf9710?mod=e2tw",
+      "https://www.wsj.com/politics/policy/trump-wont-recommend-special-prosecutor-for-epstein-matter-white-house-says-e04304d9?mod=e2tw",
+      "https://www.wsj.com/livecoverage/iran-war-2026-trump-deadline-latest-news?mod=e2tw",
+      "https://www.wsj.com/tech/ai/white-house-opposes-anthropics-plan-to-expand-access-to-mythos-model-dc281ab5?mod=e2tw"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "blocked_by_robots",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://wsj.com/robots.txt",
+        "decision": "blocked",
+        "status": 200,
+        "matching_rules": 1,
+        "error": ""
+      },
+      "homepage": {
+        "ok": false,
+        "status": 401,
+        "final_url": "https://www.wsj.com/",
+        "content_type": "text/html;charset=utf-8",
+        "title": "wsj.com",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://www.wsj.com/tech/meta-to-halt-political-advertising-in-eu-citing-transparency-rules-09e9eb79?mod=e2tw",
+          "ok": false,
+          "status": 401,
+          "content_type": "text/html;charset=utf-8",
+          "title": "wsj.com"
+        },
+        {
+          "url": "https://www.wsj.com/us-news/education/school-choice-tax-credit-private-tuition-democrats-31bf9710?mod=e2tw",
+          "ok": false,
+          "status": 401,
+          "content_type": "text/html;charset=utf-8",
+          "title": "wsj.com"
+        },
+        {
+          "url": "https://www.wsj.com/politics/policy/trump-wont-recommend-special-prosecutor-for-epstein-matter-white-house-says-e04304d9?mod=e2tw",
+          "ok": false,
+          "status": 401,
+          "content_type": "text/html;charset=utf-8",
+          "title": "wsj.com"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-gendai-media",
+    "name": "Gendai Media",
+    "source_type": "news_media",
+    "url": "https://gendai.media/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 9,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "global-economy",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://gendai.media/articles/-/114061",
+      "https://gendai.media/articles/-/110750",
+      "https://gendai.media/articles/-/108468",
+      "https://gendai.media/articles/-/106754",
+      "https://gendai.media/articles/-/105209"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "public_html_candidate_terms_unresolved",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://gendai.media/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 3,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://gendai.media/",
+        "content_type": "text/html; charset=UTF-8",
+        "title": "現代ビジネス | 講談社",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://gendai.media/articles/-/114061",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "title": "「最低賃金1000円越え」への強烈な違和感…数字に基づいた「正しい水準」があったはずだ（髙橋 洋一） | 現代ビジネス | 講談社"
+        },
+        {
+          "url": "https://gendai.media/articles/-/110750",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "title": "「学校のお役所化」「タクシーの免許制度」…北朝鮮かと目を疑う「日本を歪めるおかしな制度」ワースト3（小倉 健一） | 現代ビジネス | 講談社"
+        },
+        {
+          "url": "https://gendai.media/articles/-/108468",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "title": "「令和のトリックスター」小西洋之の陰で、国会でスルーされた「人事介入事件」が危なすぎる（髙橋 洋一） | 現代ビジネス | 講談社"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-toyokeizai-net",
+    "name": "Toyokeizai Net",
+    "source_type": "news_media",
+    "url": "https://toyokeizai.net/list/feed/rss",
+    "terms_status": "unknown",
+    "method": "rss",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_rss_after_manual_check",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "RSS feed endpoint was found during manual source check; source remains subject to ongoing terms and robots checks before each collection.",
+      "rss_promoted_at": "2026-05-10T07:12:01.095Z"
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 9,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "global-economy",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://toyokeizai.net/articles/-/867602",
+      "https://toyokeizai.net/articles/-/758871",
+      "https://toyokeizai.net/articles/-/742311",
+      "https://toyokeizai.net/articles/-/680988",
+      "https://toyokeizai.net/articles/-/641317"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:10:56.478Z",
+      "decision": "rss_candidate",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://toyokeizai.net/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 6,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://toyokeizai.net/",
+        "content_type": "text/html; charset=utf-8",
+        "title": "東洋経済オンライン | ふれるたび、視点がふえる",
+        "error": ""
+      },
+      "terms": {
+        "decision": "no_prohibition_detected_in_sample",
+        "url": "https://toyokeizai.net/list/base-terms",
+        "status": 200,
+        "error": ""
+      },
+      "feed": {
+        "ok": true,
+        "url": "https://toyokeizai.net/list/feed/rss"
+      },
+      "examples_checked": [
+        {
+          "url": "https://toyokeizai.net/articles/-/867602",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "たかまつなな｢高齢の高所得者はもっと負担を｣。若手社会起業家の年金部会委員が提言 | ビジネス | 東洋経済オンライン"
+        },
+        {
+          "url": "https://toyokeizai.net/articles/-/758871",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "岡山のバス会社､｢日本最安｣運賃100円でなぜ黒字 ｢安かろう悪かろう｣ではない快適性高める工夫 | ビジネス | 東洋経済オンライン"
+        },
+        {
+          "url": "https://toyokeizai.net/articles/-/742311",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "岩田規久男氏｢どうして日銀は焦って決めた？｣ ｢緩和に戻れば信用失う｣と懸念する元副総裁 | ビジネス | 東洋経済オンライン"
+        }
+      ]
+    },
+    "homepage_url": "https://toyokeizai.net/",
+    "rss_verification": {
+      "verified_at": "2026-05-10T07:12:01.095Z",
+      "verification_report": "outputs/raw/manual-source-check-2026-05-10T07-11-27Z.json",
+      "feed_url": "https://toyokeizai.net/list/feed/rss",
+      "robots": {
+        "url": "https://toyokeizai.net/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 6,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://toyokeizai.net/",
+        "content_type": "text/html; charset=utf-8",
+        "title": "東洋経済オンライン | ふれるたび、視点がふえる",
+        "error": ""
+      },
+      "terms": {
+        "decision": "no_prohibition_detected_in_sample",
+        "url": "https://toyokeizai.net/list/base-terms",
+        "status": 200,
+        "error": ""
+      },
+      "recommendation": "promote_to_rss_after_manual_check"
+    }
+  },
+  {
+    "id": "likes-nordot-app",
+    "name": "Nordot App",
+    "source_type": "news_media",
+    "url": "https://nordot.app/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 8,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "global-economy",
+        "international-politics",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://nordot.app/1266553277753705129?c=110564226228225532",
+      "https://nordot.app/1232164224706232439",
+      "https://nordot.app/1156157167492497785",
+      "https://nordot.app/1092429556223132048?c=39550187727945729",
+      "https://nordot.app/955304507147927552"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "public_html_candidate",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://nordot.app/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 0,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://nordot.app/",
+        "content_type": "text/html; charset=utf-8",
+        "title": "Nordot | ノアドット株式会社",
+        "error": ""
+      },
+      "terms": {
+        "decision": "no_prohibition_detected_in_sample",
+        "url": "https://legal.nordot.jp/privacy/",
+        "status": 200,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://nordot.app/1266553277753705129?c=110564226228225532",
+          "ok": false,
+          "status": 404,
+          "content_type": "text/html; charset=UTF-8",
+          "title": "エラー"
+        },
+        {
+          "url": "https://nordot.app/1232164224706232439",
+          "ok": false,
+          "status": 404,
+          "content_type": "text/html; charset=UTF-8",
+          "title": "エラー"
+        },
+        {
+          "url": "https://nordot.app/1156157167492497785",
+          "ok": false,
+          "status": 404,
+          "content_type": "text/html; charset=UTF-8",
+          "title": "エラー"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-bbc-com",
+    "name": "Bbc Com",
+    "source_type": "news_media",
+    "url": "https://bbc.com/news/rss.xml",
+    "terms_status": "unknown",
+    "method": "rss",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_rss_after_verification",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "RSS feed endpoint was discovered by enabled-source verification; source remains subject to ongoing terms and robots checks before each collection.",
+      "rss_promoted_at": "2026-05-10T06:54:13.371Z"
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 6,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "international-politics",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://www.bbc.com/japanese/articles/cedgd6x8vxzo",
+      "https://www.bbc.com/news/live/cn4v0xm9y0kt?post=asset%3Aa69603b8-0d50-4cb1-a975-56879de002e9#post",
+      "https://www.bbc.com/news/live/ce35wke27ynt?post=asset%3A9e4403e5-2596-4066-b164-f14333c2bc76#post",
+      "https://www.bbc.com/news/live/ce84073mr06t?post=asset%3A9aeb53c4-36d3-428d-9378-c7b8709f4f9b#post",
+      "https://www.bbc.com/news/articles/cwyr2lwg1rjo?xtor=AL-71-%5Bpartner%5D-%5Bbbc.news.twitter%5D-%5Bheadline%5D-%5Bnews%5D-%5Bbizdev%5D-%5Bisapi%5D&at_medium=social&at_link_id=614C0F0A-9E67-11F0-BD31-BEA0B292F9BF&at_campaign=Social_Flow&at_bbc_team=editorial&at_ptr_name=twitter&at_link_type=web_link&at_campaign_type=owned&at_format=link&at_link_origin=BBCWorld"
+    ],
+    "homepage_url": "https://bbc.com/",
+    "rss_verification": {
+      "verified_at": "2026-05-10T06:54:13.371Z",
+      "verification_report": "outputs/raw/enabled-source-verification-2026-05-10T06-50-55Z.json",
+      "feed_url": "https://bbc.com/news/rss.xml",
+      "robots": {
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "url": "https://bbc.com/robots.txt",
+        "notes": "47 matching robots rules sampled."
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.bbc.com/",
+        "content_type": "text/html; charset=utf-8",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "notes": "No terms/legal link discovered from homepage sample."
+      },
+      "recommendation": "promote_to_rss_after_review"
+    }
+  },
+  {
+    "id": "likes-jp-wsj-com",
+    "name": "Jp Wsj Com",
+    "source_type": "news_media",
+    "url": "https://jp.wsj.com/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 6,
+      "topic_ids": [
+        "global-economy",
+        "international-politics"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://jp.wsj.com/articles/trumps-unsung-economic-booster-deregulation-26dbaf14?st=xJYMZE",
+      "https://jp.wsj.com/articles/supreme-court-allows-trumps-mass-government-layoffs-to-move-forward-3228a04c?mod=hp_minor_pos22",
+      "https://jp.wsj.com/articles/trump-privately-approved-attack-plans-for-iran-but-has-withheld-final-order-d54cbdb6",
+      "https://jp.wsj.com/articles/trump-to-announce-trade-agreement-with-britain-7c2a611c?st=kQK76G",
+      "https://jp.wsj.com/articles/trump-advisers-weigh-plan-to-dismantle-education-department-a431f9f5?st=FsG626"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "blocked_by_robots",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://jp.wsj.com/robots.txt",
+        "decision": "blocked",
+        "status": 200,
+        "matching_rules": 1,
+        "error": ""
+      },
+      "homepage": {
+        "ok": false,
+        "status": 401,
+        "final_url": "https://jp.wsj.com/",
+        "content_type": "text/html;charset=utf-8",
+        "title": "wsj.com",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://jp.wsj.com/articles/trumps-unsung-economic-booster-deregulation-26dbaf14?st=xJYMZE",
+          "ok": false,
+          "status": 401,
+          "content_type": "text/html;charset=utf-8",
+          "title": "wsj.com"
+        },
+        {
+          "url": "https://jp.wsj.com/articles/supreme-court-allows-trumps-mass-government-layoffs-to-move-forward-3228a04c?mod=hp_minor_pos22",
+          "ok": false,
+          "status": 401,
+          "content_type": "text/html;charset=utf-8",
+          "title": "wsj.com"
+        },
+        {
+          "url": "https://jp.wsj.com/articles/trump-privately-approved-attack-plans-for-iran-but-has-withheld-final-order-d54cbdb6",
+          "ok": false,
+          "status": 401,
+          "content_type": "text/html;charset=utf-8",
+          "title": "wsj.com"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-yomiuri-co-jp",
+    "name": "Yomiuri Co Jp",
+    "source_type": "news_media",
+    "url": "https://yomiuri.co.jp/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 6,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "global-economy",
+        "international-politics",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://www.yomiuri.co.jp/economy/20250418-OYT1T50155/",
+      "https://www.yomiuri.co.jp/politics/20241212-OYT1T50103/",
+      "https://www.yomiuri.co.jp/national/20241030-OYT1T50030/",
+      "https://www.yomiuri.co.jp/politics/20260102-GYT1T00211/",
+      "https://www.yomiuri.co.jp/politics/20201231-OYT1T50192/"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "public_html_candidate_terms_unresolved",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://yomiuri.co.jp/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 3,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.yomiuri.co.jp/",
+        "content_type": "text/html; charset=UTF-8",
+        "title": "読売新聞 : きょうの最新ニュース・速報：発行部数No.1",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://www.yomiuri.co.jp/economy/20250418-OYT1T50155/",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "title": "トランプ関税交渉、米は貿易赤字・自動車・コメに関心…日本はコメ・大豆の輸入拡大カード用意 : 読売新聞"
+        },
+        {
+          "url": "https://www.yomiuri.co.jp/politics/20241212-OYT1T50103/",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "title": "高校授業料の無償化を検討、自民・公明・維新が協議体新設へ…前原誠司氏「政策実現の第一歩だ」 : 読売新聞"
+        },
+        {
+          "url": "https://www.yomiuri.co.jp/national/20241030-OYT1T50030/",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "title": "沖縄県が米に営業実態ない株式会社…基地問題発信でビザ取得目的、駐在県職員が「社長」兼職 : 読売新聞"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-47news-jp",
+    "name": "47news Jp",
+    "source_type": "news_media",
+    "url": "https://47news.jp/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 5,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "global-economy",
+        "international-politics",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://www.47news.jp/14113349.html?utm_source=twitter&utm_medium=social&utm_campaign=api",
+      "https://www.47news.jp/12462144.html?utm_source=twitter&utm_medium=social&utm_campaign=api",
+      "https://www.47news.jp/12417082.html",
+      "https://www.47news.jp/13646249.html",
+      "https://www.47news.jp/13575788.html?utm_source=twitter&utm_medium=social&utm_campaign=api"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "public_html_candidate_terms_unresolved",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://47news.jp/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 19,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.47news.jp/",
+        "content_type": "text/html",
+        "title": "47NEWS - 52新聞社と共同通信の総合ニュースサイト",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://www.47news.jp/14113349.html?utm_source=twitter&utm_medium=social&utm_campaign=api",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html",
+          "title": "【速報】イランの巨大ガス田施設攻撃とイスラエル|47NEWS（よんななニュース）"
+        },
+        {
+          "url": "https://www.47news.jp/12462144.html?utm_source=twitter&utm_medium=social&utm_campaign=api",
+          "ok": false,
+          "status": 404,
+          "content_type": "text/html; charset=utf-8",
+          "title": "404 Not Found"
+        },
+        {
+          "url": "https://www.47news.jp/12417082.html",
+          "ok": false,
+          "status": 404,
+          "content_type": "text/html; charset=utf-8",
+          "title": "404 Not Found"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-fnn-jp",
+    "name": "Fnn Jp",
+    "source_type": "news_media",
+    "url": "https://www.fnn.jp/list/feed/rss",
+    "terms_status": "unknown",
+    "method": "rss",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_rss_after_manual_check",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "RSS feed endpoint was found during manual source check; source remains subject to ongoing terms and robots checks before each collection.",
+      "rss_promoted_at": "2026-05-10T07:12:01.095Z"
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 5,
+      "topic_ids": [
+        "global-economy",
+        "international-politics"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://www.fnn.jp/articles/-/904442",
+      "https://www.fnn.jp/articles/-/790682",
+      "https://www.fnn.jp/articles/-/559888",
+      "https://www.fnn.jp/articles/-/962674?display=full",
+      "https://www.fnn.jp/articles/-/923502"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:10:56.478Z",
+      "decision": "rss_candidate",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://fnn.jp/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 0,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.fnn.jp/",
+        "content_type": "text/html; charset=utf-8",
+        "title": "FNNプライムオンライン｜フジテレビ系FNN28局のニュースサイト",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": true,
+        "url": "https://www.fnn.jp/list/feed/rss"
+      },
+      "examples_checked": [
+        {
+          "url": "https://www.fnn.jp/articles/-/904442",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "【速報】石破首相が辞任せず総理を続投の方針を確認…正念場の日米関税交渉を考慮し【参院選2025】｜FNNプライムオンライン"
+        },
+        {
+          "url": "https://www.fnn.jp/articles/-/790682",
+          "ok": false,
+          "status": 404,
+          "content_type": "text/html; charset=utf-8",
+          "title": "お探しのページは見つかりませんでした｜FNNプライムオンライン"
+        },
+        {
+          "url": "https://www.fnn.jp/articles/-/559888",
+          "ok": false,
+          "status": 404,
+          "content_type": "text/html; charset=utf-8",
+          "title": "お探しのページは見つかりませんでした｜FNNプライムオンライン"
+        }
+      ]
+    },
+    "homepage_url": "https://fnn.jp/",
+    "rss_verification": {
+      "verified_at": "2026-05-10T07:12:01.095Z",
+      "verification_report": "outputs/raw/manual-source-check-2026-05-10T07-11-27Z.json",
+      "feed_url": "https://www.fnn.jp/list/feed/rss",
+      "robots": {
+        "url": "https://fnn.jp/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 0,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.fnn.jp/",
+        "content_type": "text/html; charset=utf-8",
+        "title": "FNNプライムオンライン｜フジテレビ系FNN28局のニュースサイト",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "recommendation": "promote_to_rss_after_manual_check"
+    }
+  },
+  {
+    "id": "likes-newsmax-com",
+    "name": "Newsmax Com",
+    "source_type": "news_media",
+    "url": "https://newsmax.com/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 5,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "international-politics",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://www.newsmax.com/politics/trump-second-carrier-group-iran/2026/02/10/id/1245603/",
+      "https://www.newsmax.com/world/globaltalk/britain-france-islamic-state-arms/2026/01/03/id/1240683/",
+      "https://www.newsmax.com/newsmax-tv/volodymyr-zelenskyy-blaine-holt-tony-shaffer/2025/12/25/id/1239649/",
+      "https://www.newsmax.com/world/globaltalk/russia-cuba-putin/2025/10/30/id/1232560/",
+      "https://www.newsmax.com/newsfront/grokipedia-bias-wikipedia/2025/10/27/id/1232089/"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "public_html_candidate_terms_unresolved",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://newsmax.com/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 128,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.newsmax.com/",
+        "content_type": "text/html; charset=utf-8",
+        "title": "Newsmax – Breaking News | News Videos | Politics, Health, Finance",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://www.newsmax.com/politics/trump-second-carrier-group-iran/2026/02/10/id/1245603/",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "Trump Weighs Second Carrier If Iran Talks Collapse | Newsmax.com"
+        },
+        {
+          "url": "https://www.newsmax.com/world/globaltalk/britain-france-islamic-state-arms/2026/01/03/id/1240683/",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "UK, France Hit Islamic State Arms Cache in Syria | Newsmax.com"
+        },
+        {
+          "url": "https://www.newsmax.com/newsmax-tv/volodymyr-zelenskyy-blaine-holt-tony-shaffer/2025/12/25/id/1239649/",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "Shaffer to Newsmax: Russia Likely to Reject Zelenskyy Donbas Proposal | Newsmax.com"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-asahi-com",
+    "name": "Asahi Com",
+    "source_type": "news_media",
+    "url": "https://asahi.com/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 4,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "global-economy",
+        "international-politics"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://www.asahi.com/articles/ASV433DTVV43UTIL01FM.html?iref=comtop_7_01",
+      "https://www.asahi.com/articles/ASV2J3HFTV2JUTFL017M.html?ref=tw_asahi",
+      "https://www.asahi.com/articles/ASRBF6T8NRBFUTFK02Q.html",
+      "https://www.asahi.com/articles/ASQDF32WMQD9UTIL018.html"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "public_html_candidate",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://asahi.com/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 11,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.asahi.com/",
+        "content_type": "text/html",
+        "title": "朝日新聞：朝日新聞社のニュースサイト",
+        "error": ""
+      },
+      "terms": {
+        "decision": "no_prohibition_detected_in_sample",
+        "url": "http://www.asahi.com/policy/index.html",
+        "status": 200,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://www.asahi.com/articles/ASV433DTVV43UTIL01FM.html?iref=comtop_7_01",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html;charset=UTF-8",
+          "title": "商船三井のLNG船がホルムズ海峡を通過 日本政府は交渉不関与か [米・イスラエルのイラン攻撃 イラン情勢]：朝日新聞"
+        },
+        {
+          "url": "https://www.asahi.com/articles/ASV2J3HFTV2JUTFL017M.html?ref=tw_asahi",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html;charset=UTF-8",
+          "title": "金融所得、金融機関にオンライン提出義務 75歳以上保険料に反映へ：朝日新聞"
+        },
+        {
+          "url": "https://www.asahi.com/articles/ASRBF6T8NRBFUTFK02Q.html",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html;charset=UTF-8",
+          "title": "自民党、提言に「所得減税」を盛り込まず 総合経済対策めぐり調整 [自由民主党（自民党）]：朝日新聞"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-itmedia-co-jp",
+    "name": "Itmedia Co Jp",
+    "source_type": "news_media",
+    "url": "https://rss.itmedia.co.jp/rss/2.0/topstory.xml",
+    "terms_status": "unknown",
+    "method": "rss",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_rss_after_manual_check",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "RSS feed endpoint was found during manual source check; source remains subject to ongoing terms and robots checks before each collection.",
+      "rss_promoted_at": "2026-05-10T07:12:01.095Z"
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 4,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "international-politics",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://www.itmedia.co.jp/news/articles/2602/27/news084.html",
+      "https://www.itmedia.co.jp/business/articles/2309/19/news060.html",
+      "https://www.itmedia.co.jp/news/articles/2302/15/news165.html#utm_term=share_sp",
+      "https://www.itmedia.co.jp/aiplus/articles/2604/20/news079.html"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:10:56.478Z",
+      "decision": "rss_candidate",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://itmedia.co.jp/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 0,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.itmedia.co.jp/",
+        "content_type": "text/html",
+        "title": "IT�������|�[�^���uITmedia�vHome",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": true,
+        "url": "https://rss.itmedia.co.jp/rss/2.0/topstory.xml"
+      },
+      "examples_checked": [
+        {
+          "url": "https://www.itmedia.co.jp/news/articles/2602/27/news084.html",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html",
+          "title": "���쌧�̔p�Z��AI�f�[�^�Z���^�[�Ɂ@NVIDIA�uA4000�v�uH100�v�Ȃǐݒu�ց@GPU�N���E�h�̃n�C���] - ITmedia NEWS"
+        },
+        {
+          "url": "https://www.itmedia.co.jp/business/articles/2309/19/news060.html",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html",
+          "title": "���{�̃^�N�V�[�͖{���ɑ��v�Ȃ̂��@�C�O�Ƃ́g���h���L����F�X�s���o�ς̕������i1/5 �y�[�W�j - ITmedia �r�W�l�X�I�����C��"
+        },
+        {
+          "url": "https://www.itmedia.co.jp/news/articles/2302/15/news165.html#utm_term=share_sp",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html",
+          "title": "AI�C���X�g�����Z�p�ɂ܂��Ռ��@�L�����̃|�[�Y�����R���݂́uControlNet�v�o�� - ITmedia NEWS"
+        }
+      ]
+    },
+    "homepage_url": "https://itmedia.co.jp/",
+    "rss_verification": {
+      "verified_at": "2026-05-10T07:12:01.095Z",
+      "verification_report": "outputs/raw/manual-source-check-2026-05-10T07-11-27Z.json",
+      "feed_url": "https://rss.itmedia.co.jp/rss/2.0/topstory.xml",
+      "robots": {
+        "url": "https://itmedia.co.jp/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 0,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.itmedia.co.jp/",
+        "content_type": "text/html",
+        "title": "IT�������|�[�^���uITmedia�vHome",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "recommendation": "promote_to_rss_after_manual_check"
+    }
+  },
+  {
+    "id": "likes-mainichi-jp",
+    "name": "Mainichi Jp",
+    "source_type": "news_media",
+    "url": "https://mainichi.jp/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 4,
+      "topic_ids": [
+        "global-economy",
+        "international-politics",
+        "interpersonal-support"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://mainichi.jp/articles/20211013/k00/00m/010/285000c",
+      "https://mainichi.jp/articles/20231128/k00/00m/020/237000c",
+      "https://mainichi.jp/articles/20220808/k00/00m/200/127000c",
+      "https://mainichi.jp/articles/20220419/k00/00m/010/115000c"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "public_html_candidate",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://mainichi.jp/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 0,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://mainichi.jp/",
+        "content_type": "text/html; charset=UTF-8",
+        "title": "毎日新聞デジタル | 毎日新聞のニュースサイト",
+        "error": ""
+      },
+      "terms": {
+        "decision": "no_prohibition_detected_in_sample",
+        "url": "https://mainichi.jp/policy/",
+        "status": 200,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://mainichi.jp/articles/20211013/k00/00m/010/285000c",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "title": "高市早苗氏、企業の現預金への課税を検討 法人税巡り | 毎日新聞"
+        },
+        {
+          "url": "https://mainichi.jp/articles/20231128/k00/00m/020/237000c",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "title": "育児で時短勤務、賃金の1割助成 2歳未満対象で厚労省検討 | 毎日新聞"
+        },
+        {
+          "url": "https://mainichi.jp/articles/20220808/k00/00m/200/127000c",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "title": "小島瑠璃子さん中国に留学、移住へ「タイミングは状況みて判断」 | 毎日新聞"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-news-livedoor-com",
+    "name": "News Livedoor Com",
+    "source_type": "news_media",
+    "url": "https://news.livedoor.com/topics/rss/top.xml",
+    "terms_status": "unknown",
+    "method": "rss",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_rss_after_manual_check",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "RSS feed endpoint was found during manual source check; source remains subject to ongoing terms and robots checks before each collection.",
+      "rss_promoted_at": "2026-05-10T07:12:01.095Z"
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 4,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "global-economy",
+        "international-politics",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://news.livedoor.com/article/detail/28724117/",
+      "https://news.livedoor.com/article/detail/28569686/",
+      "https://news.livedoor.com/article/detail/27414992/?s=09",
+      "https://news.livedoor.com/article/detail/23091864/"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:10:56.478Z",
+      "decision": "rss_candidate",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://news.livedoor.com/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 1,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://news.livedoor.com/",
+        "content_type": "text/html; charset=euc-jp",
+        "title": "�饤�֥ɥ��˥塼����livedoor �˥塼����",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": true,
+        "url": "https://news.livedoor.com/topics/rss/top.xml"
+      },
+      "examples_checked": [
+        {
+          "url": "https://news.livedoor.com/article/detail/28724117/",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=euc-jp",
+          "title": "AI�ˤ����ͥ����ͥ������̵�����ѡ��кѻ��Ⱦʤ��پ� - �饤�֥ɥ��˥塼��"
+        },
+        {
+          "url": "https://news.livedoor.com/article/detail/28569686/",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=euc-jp",
+          "title": "���ܡ����������θ����Χ���դ������ Ϳ�޴��������餫�ˤ��� - �饤�֥ɥ��˥塼��"
+        },
+        {
+          "url": "https://news.livedoor.com/article/detail/27414992/?s=09",
+          "ok": false,
+          "status": 404,
+          "content_type": "text/html",
+          "title": "���顼"
+        }
+      ]
+    },
+    "homepage_url": "https://news.livedoor.com/",
+    "rss_verification": {
+      "verified_at": "2026-05-10T07:12:01.095Z",
+      "verification_report": "outputs/raw/manual-source-check-2026-05-10T07-11-27Z.json",
+      "feed_url": "https://news.livedoor.com/topics/rss/top.xml",
+      "robots": {
+        "url": "https://news.livedoor.com/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 1,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://news.livedoor.com/",
+        "content_type": "text/html; charset=euc-jp",
+        "title": "�饤�֥ɥ��˥塼����livedoor �˥塼����",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "recommendation": "promote_to_rss_after_manual_check"
+    }
+  },
+  {
+    "id": "likes-newsdig-tbs-co-jp",
+    "name": "Newsdig Tbs Co Jp",
+    "source_type": "news_media",
+    "url": "https://newsdig.tbs.co.jp/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 4,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "global-economy",
+        "international-politics"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://newsdig.tbs.co.jp/articles/-/1664488",
+      "https://newsdig.tbs.co.jp/articles/-/299137",
+      "https://newsdig.tbs.co.jp/articles/-/255202",
+      "https://newsdig.tbs.co.jp/articles/-/220004"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "public_html_candidate_terms_unresolved",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://newsdig.tbs.co.jp/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 5,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://newsdig.tbs.co.jp/",
+        "content_type": "text/html; charset=utf-8",
+        "title": "TBS NEWS DIG | TBS/JNNのニュースサイト",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://newsdig.tbs.co.jp/articles/-/1664488",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "USスチール買収に意欲の米鉄鋼大手「クリーブランド・クリフス」CEO「日本は中国より悪い」会見で激しい日本批判 | TBS NEWS DIG"
+        },
+        {
+          "url": "https://newsdig.tbs.co.jp/articles/-/299137",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "障害者雇用に立ちはだかる“週20時間の壁”撤廃へ 「短い時間から自分のペースで働ける」共生社会めざす当事者から期待と懸念の声 | TBS NEWS DIG"
+        },
+        {
+          "url": "https://newsdig.tbs.co.jp/articles/-/255202",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "障害者雇用に“改革” 短時間で自分にあった働き方が可能に？ 統合失調症と闘う男性「念願の制度」 企業からも期待の声 | TBS NEWS DIG"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-newsweekjapan-jp",
+    "name": "Newsweekjapan Jp",
+    "source_type": "news_media",
+    "url": "https://newsweekjapan.jp/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 4,
+      "topic_ids": [
+        "global-economy",
+        "international-politics"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://www.newsweekjapan.jp/articles/-/13062",
+      "https://www.newsweekjapan.jp/articles/-/13051",
+      "https://www.newsweekjapan.jp/articles/-/13050",
+      "https://www.newsweekjapan.jp/articles/-/12607"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "public_html_candidate_terms_unresolved",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://newsweekjapan.jp/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 0,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.newsweekjapan.jp/",
+        "content_type": "text/html; charset=utf-8",
+        "title": "ニューズウィーク日本版 オフィシャルサイト",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://www.newsweekjapan.jp/articles/-/13062",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "強まる警戒感、アメリカ経済「急失速」の正しい読み方──際立つ欧州株と日本株の格差 | ニューズウィーク日本版 オフィシャルサイト"
+        },
+        {
+          "url": "https://www.newsweekjapan.jp/articles/-/13051",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "植田日銀の政策判断はなぜ危ういのか | ニューズウィーク日本版 オフィシャルサイト"
+        },
+        {
+          "url": "https://www.newsweekjapan.jp/articles/-/13050",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "植田総裁は失政を繰り返すのか？ | ニューズウィーク日本版 オフィシャルサイト"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-ascii-jp",
+    "name": "Ascii Jp",
+    "source_type": "news_media",
+    "url": "https://ascii.jp/rss.xml",
+    "terms_status": "unknown",
+    "method": "rss",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_rss_after_verification",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "RSS feed endpoint was discovered by enabled-source verification; source remains subject to ongoing terms and robots checks before each collection.",
+      "rss_promoted_at": "2026-05-10T06:54:13.371Z"
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 3,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://ascii.jp/elem/000/004/260/4260102/",
+      "https://ascii.jp/elem/000/004/250/4250447/",
+      "https://ascii.jp/elem/000/004/312/4312173/"
+    ],
+    "homepage_url": "https://ascii.jp/",
+    "rss_verification": {
+      "verified_at": "2026-05-10T06:54:13.371Z",
+      "verification_report": "outputs/raw/enabled-source-verification-2026-05-10T06-50-55Z.json",
+      "feed_url": "https://ascii.jp/rss.xml",
+      "robots": {
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "url": "https://ascii.jp/robots.txt",
+        "notes": "1 matching robots rules sampled."
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://ascii.jp/",
+        "content_type": "text/html; charset=UTF-8",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "notes": "No terms/legal link discovered from homepage sample."
+      },
+      "recommendation": "promote_to_rss_after_review"
+    }
+  },
+  {
+    "id": "likes-tokyo-np-co-jp",
+    "name": "Tokyo-np Co Jp",
+    "source_type": "news_media",
+    "url": "https://tokyo-np.co.jp/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 3,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "global-economy",
+        "international-politics",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://www.tokyo-np.co.jp/article/199045",
+      "https://www.tokyo-np.co.jp/article/182370",
+      "https://www.tokyo-np.co.jp/article/164273"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "public_html_candidate_terms_unresolved",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://tokyo-np.co.jp/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 3,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.tokyo-np.co.jp/",
+        "content_type": "text/html; charset=UTF-8",
+        "title": "東京新聞デジタル：東京新聞のニュースサイト",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://www.tokyo-np.co.jp/article/199045",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "title": "山中・横浜市長就任1年 中期計画案を発表 中学校給食の全員実施 26年度以降、デリバリーで：東京新聞デジタル"
+        },
+        {
+          "url": "https://www.tokyo-np.co.jp/article/182370",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "title": "山際経済再生相を刑事告発「パーティー収支に虚偽」 政治資金規正法疑いで川崎市民ら：東京新聞デジタル"
+        },
+        {
+          "url": "https://www.tokyo-np.co.jp/article/164273",
+          "ok": false,
+          "status": 404,
+          "content_type": "text/html; charset=UTF-8",
+          "title": "お探しのページが見つかりませんでした| 東京新聞デジタル"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-dot-asahi-com",
+    "name": "Dot Asahi Com",
+    "source_type": "news_media",
+    "url": "https://dot.asahi.com/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 2,
+      "topic_ids": [
+        "ai-disability-welfare"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://dot.asahi.com/articles/-/3262",
+      "https://dot.asahi.com/articles/-/5488"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "public_html_candidate_terms_unresolved",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://dot.asahi.com/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 1,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://dot.asahi.com/",
+        "content_type": "text/html; charset=utf-8",
+        "title": "AERA DIGITAL（アエラデジタル） | あなたと「時代」をつなぐメディア",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://dot.asahi.com/articles/-/3262",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "発達障害人材の未活用は「2.3兆円」の損失 オムロンは高いスキルの技術者を積極採用 | 概要 | AERA DIGITAL（アエラデジタル）"
+        },
+        {
+          "url": "https://dot.asahi.com/articles/-/5488",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "中学生監禁事件の背景に「脆弱な支援」と「親心」 発達障害の子を持つ親の養育ストレス | 概要 | AERA DIGITAL（アエラデジタル）"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-ft-com",
+    "name": "Ft Com",
+    "source_type": "news_media",
+    "url": "https://ft.com/news/rss.xml",
+    "terms_status": "unknown",
+    "method": "rss",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_rss_after_verification",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "RSS feed endpoint was discovered by enabled-source verification; source remains subject to ongoing terms and robots checks before each collection.",
+      "rss_promoted_at": "2026-05-10T06:54:13.371Z"
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 2,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "international-politics",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://www.ft.com/content/7c6ee5e8-c379-40c0-9d9f-d1ecc7b69261",
+      "https://www.ft.com/content/b8ad2fe0-0df8-4a43-bc5a-6fd53b48cc1e"
+    ],
+    "homepage_url": "https://ft.com/",
+    "rss_verification": {
+      "verified_at": "2026-05-10T06:54:13.371Z",
+      "verification_report": "outputs/raw/enabled-source-verification-2026-05-10T06-50-55Z.json",
+      "feed_url": "https://ft.com/news/rss.xml",
+      "robots": {
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "url": "https://ft.com/robots.txt",
+        "notes": "16 matching robots rules sampled."
+      },
+      "homepage": {
+        "ok": false,
+        "status": 403,
+        "final_url": "https://www.ft.com/",
+        "content_type": "text/html; charset=UTF-8",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "notes": "No terms/legal link discovered from homepage sample."
+      },
+      "recommendation": "promote_to_rss_after_review"
+    }
+  },
+  {
+    "id": "likes-washingtonpost-com",
+    "name": "Washingtonpost Com",
+    "source_type": "news_media",
+    "url": "https://washingtonpost.com/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 2,
+      "topic_ids": [
+        "global-economy",
+        "international-politics"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://www.washingtonpost.com/business/2025/04/01/trump-tariffs-draft-recession-projection/",
+      "https://www.washingtonpost.com/opinions/2022/04/08/virginias-universities-should-not-support-chinas-military/"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "public_html_candidate_terms_unresolved",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://washingtonpost.com/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 115,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.washingtonpost.com/",
+        "content_type": "text/html; charset=utf-8",
+        "title": "The Washington Post - Breaking news and latest headlines, U.S. news, world news, and video",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://www.washingtonpost.com/business/2025/04/01/trump-tariffs-draft-recession-projection/",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "Trump aides draft tariff plans that experts say could hurt the economy - The Washington Post"
+        },
+        {
+          "url": "https://www.washingtonpost.com/opinions/2022/04/08/virginias-universities-should-not-support-chinas-military/",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "title": "Opinion | Virginia’s universities should not support China’s military - The Washington Post"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-business-nikkei-com",
+    "name": "Business Nikkei Com",
+    "source_type": "news_media",
+    "url": "https://business.nikkei.com/rss/all_nb.rdf",
+    "terms_status": "unknown",
+    "method": "rss",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_rss_after_manual_check",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "RSS feed endpoint was found during manual source check; source remains subject to ongoing terms and robots checks before each collection.",
+      "rss_promoted_at": "2026-05-10T07:12:01.095Z"
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 1,
+      "topic_ids": [
+        "global-economy"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://business.nikkei.com/atcl/gen/19/00116/090900063/"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:10:56.478Z",
+      "decision": "rss_candidate",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://business.nikkei.com/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 1,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://business.nikkei.com/",
+        "content_type": "text/html; charset=UTF-8",
+        "title": "日経ビジネス電子版：総合トップ",
+        "error": ""
+      },
+      "terms": {
+        "decision": "no_prohibition_detected_in_sample",
+        "url": "https://business.nikkei.com/tag/?tag=N0036%E6%94%BF%E6%B2%BB%E3%83%BB%E6%94%BF%E7%AD%96&amp;i_cid=nbpnb_politics-policy",
+        "status": 200,
+        "error": ""
+      },
+      "feed": {
+        "ok": true,
+        "url": "https://business.nikkei.com/rss/all_nb.rdf"
+      },
+      "examples_checked": [
+        {
+          "url": "https://business.nikkei.com/atcl/gen/19/00116/090900063/",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "title": "棚上げの「金融所得課税強化」案が再浮上 NISA拡充と抱き合わせで：日経ビジネス電子版"
+        }
+      ]
+    },
+    "homepage_url": "https://business.nikkei.com/",
+    "rss_verification": {
+      "verified_at": "2026-05-10T07:12:01.095Z",
+      "verification_report": "outputs/raw/manual-source-check-2026-05-10T07-11-27Z.json",
+      "feed_url": "https://business.nikkei.com/rss/all_nb.rdf",
+      "robots": {
+        "url": "https://business.nikkei.com/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 1,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://business.nikkei.com/",
+        "content_type": "text/html; charset=UTF-8",
+        "title": "日経ビジネス電子版：総合トップ",
+        "error": ""
+      },
+      "terms": {
+        "decision": "no_prohibition_detected_in_sample",
+        "url": "https://business.nikkei.com/tag/?tag=N0036%E6%94%BF%E6%B2%BB%E3%83%BB%E6%94%BF%E7%AD%96&amp;i_cid=nbpnb_politics-policy",
+        "status": 200,
+        "error": ""
+      },
+      "recommendation": "promote_to_rss_after_manual_check"
+    }
+  },
+  {
+    "id": "likes-nhk-or-jp",
+    "name": "Nhk Or Jp",
+    "source_type": "news_media",
+    "url": "https://nhk.or.jp/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 1,
+      "topic_ids": [
+        "global-economy"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://www.nhk.or.jp/politics/articles/lastweek/88966.html"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "keep_manual_no_usable_endpoint",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://nhk.or.jp/robots.txt",
+        "decision": "unknown",
+        "status": null,
+        "matching_rules": 0,
+        "error": "fetch failed"
+      },
+      "homepage": {
+        "ok": false,
+        "status": null,
+        "final_url": "https://nhk.or.jp/",
+        "content_type": "",
+        "title": "",
+        "error": "fetch failed"
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://www.nhk.or.jp/politics/articles/lastweek/88966.html",
+          "ok": false,
+          "status": 404,
+          "content_type": "text/html",
+          "title": "エラー - NHK"
+        }
+      ]
+    }
+  },
+  {
+    "id": "likes-theguardian-com",
+    "name": "Theguardian Com",
+    "source_type": "news_media",
+    "url": "https://theguardian.com/rss",
+    "terms_status": "unknown",
+    "method": "rss",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_rss_after_verification",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "RSS feed endpoint was discovered by enabled-source verification; source remains subject to ongoing terms and robots checks before each collection.",
+      "rss_promoted_at": "2026-05-10T06:54:13.371Z"
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 1,
+      "topic_ids": [
+        "international-politics"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://www.theguardian.com/news/2018/dec/07/china-plan-for-global-media-dominance-propaganda-xi-jinping"
+    ],
+    "homepage_url": "https://theguardian.com/",
+    "rss_verification": {
+      "verified_at": "2026-05-10T06:54:13.371Z",
+      "verification_report": "outputs/raw/enabled-source-verification-2026-05-10T06-50-55Z.json",
+      "feed_url": "https://theguardian.com/rss",
+      "robots": {
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "url": "https://theguardian.com/robots.txt",
+        "notes": "48 matching robots rules sampled."
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.theguardian.com/international",
+        "content_type": "text/html; charset=UTF-8",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "notes": "No terms/legal link discovered from homepage sample."
+      },
+      "recommendation": "promote_to_rss_after_review"
+    }
+  },
+  {
+    "id": "likes-xtech-nikkei-com",
+    "name": "Xtech Nikkei Com",
+    "source_type": "news_media",
+    "url": "https://xtech.nikkei.com/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T06:32:25.286Z",
+      "candidate_file": "config/like_source_candidates.json",
+      "reason": "Promoted from X likes news_media candidates. Automated article collection stays disabled until terms, robots, feed/API endpoint, and source quality are reviewed."
+    },
+    "derived_from": {
+      "input": "x_likes_archive",
+      "observed_count": 1,
+      "topic_ids": [
+        "ai-disability-welfare",
+        "openai-news"
+      ],
+      "note": "Likes-derived interest signal; treat as candidate source evidence, not endorsement."
+    },
+    "example_urls": [
+      "https://xtech.nikkei.com/atcl/nxt/column/18/00138/082001588/"
+    ],
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "public_html_candidate",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://xtech.nikkei.com/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 2,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://xtech.nikkei.com/",
+        "content_type": "text/html; charset=UTF-8",
+        "title": "日経クロステック（xTECH）",
+        "error": ""
+      },
+      "terms": {
+        "decision": "no_prohibition_detected_in_sample",
+        "url": "https://www.nikkei.com/help/feature/device/bpservice/bpservice_terms.html?n_cid=nbpnxt_sied_menudetail_com",
+        "status": 200,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": [
+        {
+          "url": "https://xtech.nikkei.com/atcl/nxt/column/18/00138/082001588/",
+          "ok": true,
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "title": "AIデータセンター急増で電力需要は“激減”か | 日経クロステック（xTECH）"
+        }
+      ]
+    }
+  },
+  {
+    "id": "thinktank-fdd-org",
+    "name": "Foundation for Defense of Democracies",
+    "source_type": "think_tank",
+    "url": "https://www.fdd.org/feed/",
+    "terms_status": "unknown",
+    "method": "rss",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_rss_after_verification",
+      "promoted_at": "2026-05-10T06:37:33.766Z",
+      "candidate_file": null,
+      "reason": "RSS feed endpoint was discovered by enabled-source verification; source remains subject to ongoing terms and robots checks before each collection.",
+      "rss_promoted_at": "2026-05-10T06:54:13.371Z"
+    },
+    "derived_from": {
+      "input": "manual_seed",
+      "observed_count": 0,
+      "topic_ids": [
+        "international-politics"
+      ],
+      "note": "Added at user request as a foreign-policy and security source candidate."
+    },
+    "example_urls": [
+      "https://www.fdd.org/analysis/"
+    ],
+    "homepage_url": "https://www.fdd.org/",
+    "rss_verification": {
+      "verified_at": "2026-05-10T06:54:13.371Z",
+      "verification_report": "outputs/raw/enabled-source-verification-2026-05-10T06-50-55Z.json",
+      "feed_url": "https://www.fdd.org/feed/",
+      "robots": {
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "url": "https://www.fdd.org/robots.txt",
+        "notes": "5 matching robots rules sampled."
+      },
+      "homepage": {
+        "ok": false,
+        "status": 403,
+        "final_url": "https://www.fdd.org/",
+        "content_type": "text/html; charset=UTF-8",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "notes": "No terms/legal link discovered from homepage sample."
+      },
+      "recommendation": "promote_to_rss_after_review"
+    }
+  },
+  {
+    "id": "brics-india-2026-official",
+    "name": "BRICS India 2026 Official Website",
+    "source_type": "official_government",
+    "url": "https://www.brics2026.gov.in/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T07:17:19.843Z",
+      "candidate_file": null,
+      "reason": "Manually seeded BRICS-related source. Automated collection remains disabled until manual source check identifies a usable RSS/public endpoint and terms/robots status is reviewed."
+    },
+    "derived_from": {
+      "input": "manual_seed",
+      "observed_count": 0,
+      "topic_ids": [
+        "international-politics",
+        "global-economy"
+      ],
+      "note": "Official BRICS India 2026 chairship website."
+    },
+    "brics_source": true,
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "keep_manual_access_limited",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://www.brics2026.gov.in/robots.txt",
+        "decision": "unknown",
+        "status": 403,
+        "matching_rules": 0,
+        "error": ""
+      },
+      "homepage": {
+        "ok": false,
+        "status": 403,
+        "final_url": "https://www.brics2026.gov.in/",
+        "content_type": "text/html",
+        "title": "ERROR: The request could not be satisfied",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": []
+    }
+  },
+  {
+    "id": "brics-infobrics-official-portal",
+    "name": "BRICS Joint MFA Portal",
+    "source_type": "official_government",
+    "url": "https://infobrics.org/en/rss/",
+    "terms_status": "unknown",
+    "method": "rss",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_rss_after_manual_check",
+      "promoted_at": "2026-05-10T07:17:19.843Z",
+      "candidate_file": null,
+      "reason": "Manual source check found a fetchable RSS endpoint.",
+      "rss_promoted_at": "2026-05-10T07:21:03.918Z"
+    },
+    "derived_from": {
+      "input": "manual_seed",
+      "observed_count": 0,
+      "topic_ids": [
+        "international-politics",
+        "global-economy"
+      ],
+      "note": "Joint website of the Ministries of Foreign Affairs of the BRICS Member States."
+    },
+    "brics_source": true,
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "rss_candidate",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://infobrics.org/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 5,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://infobrics.org/en/",
+        "content_type": "text/html; charset=UTF-8",
+        "title": "BRICS portal",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": true,
+        "url": "https://infobrics.org/en/rss/"
+      },
+      "examples_checked": []
+    },
+    "homepage_url": "https://infobrics.org/en/",
+    "rss_verification": {
+      "verified_at": "2026-05-10T07:21:03.918Z",
+      "verification_report": "outputs/raw/manual-source-check-2026-05-10T07-20-36Z.json",
+      "homepage_status": 200,
+      "homepage_final_url": "https://infobrics.org/en/",
+      "robots_decision": "not_blocked_by_sample",
+      "terms_decision": "not_found",
+      "recommendation": "promote_to_rss_after_manual_check"
+    }
+  },
+  {
+    "id": "brics-brazil-2025-official",
+    "name": "BRICS Brazil 2025 Official Website",
+    "source_type": "official_government",
+    "url": "https://brics.br/en",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T07:17:19.843Z",
+      "candidate_file": null,
+      "reason": "Manually seeded BRICS-related source. Automated collection remains disabled until manual source check identifies a usable RSS/public endpoint and terms/robots status is reviewed."
+    },
+    "derived_from": {
+      "input": "manual_seed",
+      "observed_count": 0,
+      "topic_ids": [
+        "international-politics",
+        "global-economy"
+      ],
+      "note": "Official website for Brazil BRICS 2025 presidency."
+    },
+    "brics_source": true,
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "public_html_candidate_terms_unresolved",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://brics.br/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 0,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://brics.br/en",
+        "content_type": "text/html; charset=utf-8",
+        "title": "BRICS Brasil - English",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": []
+    }
+  },
+  {
+    "id": "brics-new-development-bank",
+    "name": "New Development Bank",
+    "source_type": "official_institution",
+    "url": "https://www.ndb.int/feed/?post_type=news",
+    "terms_status": "unknown",
+    "method": "rss",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_rss_after_manual_check",
+      "promoted_at": "2026-05-10T07:17:19.843Z",
+      "candidate_file": null,
+      "reason": "Manual source check found RSS, and follow-up selected the NDB news RSS because the default feed returned zero items.",
+      "rss_promoted_at": "2026-05-10T07:21:03.918Z"
+    },
+    "derived_from": {
+      "input": "manual_seed",
+      "observed_count": 0,
+      "topic_ids": [
+        "global-economy",
+        "international-politics"
+      ],
+      "note": "Official New Development Bank website."
+    },
+    "brics_source": true,
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "rss_candidate",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://www.ndb.int/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 5,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.ndb.int/",
+        "content_type": "text/html; charset=UTF-8",
+        "title": "Home - New Development Bank",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": true,
+        "url": "https://www.ndb.int/feed/"
+      },
+      "examples_checked": []
+    },
+    "homepage_url": "https://www.ndb.int/",
+    "rss_verification": {
+      "verified_at": "2026-05-10T07:33:56.884Z",
+      "verification_report": "manual follow-up fetch: NDB news feed item count check",
+      "homepage_status": 200,
+      "homepage_final_url": "https://www.ndb.int/",
+      "robots_decision": "not_blocked_by_sample",
+      "terms_decision": "not_found",
+      "recommendation": "use_news_rss_after_empty_default_feed",
+      "item_count_sample": 50
+    }
+  },
+  {
+    "id": "brics-info-research-platform",
+    "name": "BRICS Information Sharing and Exchanging Platform",
+    "source_type": "research_portal",
+    "url": "https://www.brics-info.org/feed/",
+    "terms_status": "unknown",
+    "method": "rss",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_rss_after_manual_check",
+      "promoted_at": "2026-05-10T07:17:19.843Z",
+      "candidate_file": null,
+      "reason": "Manual source check found a fetchable RSS endpoint.",
+      "rss_promoted_at": "2026-05-10T07:21:03.918Z"
+    },
+    "derived_from": {
+      "input": "manual_seed",
+      "observed_count": 0,
+      "topic_ids": [
+        "international-politics",
+        "global-economy"
+      ],
+      "note": "BRICS-focused information and research portal; use as contextual source, not primary official citation."
+    },
+    "brics_source": true,
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "rss_candidate",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "https://www.brics-info.org/robots.txt",
+        "decision": "not_blocked_by_sample",
+        "status": 200,
+        "matching_rules": 2,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.brics-info.org/",
+        "content_type": "text/html; charset=UTF-8",
+        "title": "BRICS Information Sharing &amp; Exchanging Platform",
+        "error": ""
+      },
+      "terms": {
+        "decision": "not_found",
+        "url": "",
+        "status": null,
+        "error": ""
+      },
+      "feed": {
+        "ok": true,
+        "url": "https://www.brics-info.org/feed/"
+      },
+      "examples_checked": []
+    },
+    "homepage_url": "https://www.brics-info.org/",
+    "rss_verification": {
+      "verified_at": "2026-05-10T07:21:03.918Z",
+      "verification_report": "outputs/raw/manual-source-check-2026-05-10T07-20-36Z.json",
+      "homepage_status": 200,
+      "homepage_final_url": "https://www.brics-info.org/",
+      "robots_decision": "not_blocked_by_sample",
+      "terms_decision": "not_found",
+      "recommendation": "promote_to_rss_after_manual_check"
+    }
+  },
+  {
+    "id": "brics-utoronto-information-centre",
+    "name": "BRICS Information Centre University of Toronto",
+    "source_type": "research_portal",
+    "url": "http://www.brics.utoronto.ca/",
+    "terms_status": "unknown",
+    "method": "manual_check",
+    "access_scope": "public",
+    "enabled": true,
+    "activation_policy": {
+      "status": "enabled_manual_review_only",
+      "promoted_at": "2026-05-10T07:17:19.843Z",
+      "candidate_file": null,
+      "reason": "Manually seeded BRICS-related source. Automated collection remains disabled until manual source check identifies a usable RSS/public endpoint and terms/robots status is reviewed."
+    },
+    "derived_from": {
+      "input": "manual_seed",
+      "observed_count": 0,
+      "topic_ids": [
+        "international-politics",
+        "global-economy"
+      ],
+      "note": "Independent BRICS documentation archive at University of Toronto."
+    },
+    "brics_source": true,
+    "manual_check_review": {
+      "reviewed_at": "2026-05-10T07:19:27.643Z",
+      "decision": "public_html_candidate",
+      "report_hint": "outputs/reports/manual-source-check-*.md",
+      "robots": {
+        "url": "http://www.brics.utoronto.ca/robots.txt",
+        "decision": "unknown",
+        "status": 404,
+        "matching_rules": 0,
+        "error": ""
+      },
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "final_url": "http://www.brics.utoronto.ca/",
+        "content_type": "text/html; charset=UTF-8",
+        "title": "BRICS Information Centre",
+        "error": ""
+      },
+      "terms": {
+        "decision": "no_prohibition_detected_in_sample",
+        "url": "http://bricspolicycenter.org/",
+        "status": 200,
+        "error": ""
+      },
+      "feed": {
+        "ok": false,
+        "url": ""
+      },
+      "examples_checked": []
+    }
   }
 ]

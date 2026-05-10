@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, rm, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { assertBrowserPurposeAllowed } from "../safety/policyCheck.ts";
 
@@ -58,10 +58,13 @@ export function makeBrowserVerificationTask(source, topic, reason, now = new Dat
 }
 
 export async function writeBrowserTasks(root, tasks, topicId) {
-  if (tasks.length === 0) return null;
   const dir = join(root, "outputs", "browser_tasks");
-  await mkdir(dir, { recursive: true });
   const path = join(dir, `${topicId}.json`);
+  if (tasks.length === 0) {
+    await rm(path, { force: true });
+    return null;
+  }
+  await mkdir(dir, { recursive: true });
   await writeFile(path, JSON.stringify(tasks, null, 2), "utf8");
   return path;
 }

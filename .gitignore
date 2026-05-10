@@ -1,6 +1,7 @@
 node_modules/
 dist/
 tools/
+config/following_source_candidates.json
 outputs/raw/**
 !outputs/raw/.gitkeep
 outputs/reports/**
@@ -9,3 +10,6 @@ outputs/store/**
 !outputs/store/.gitkeep
 outputs/browser_tasks/**
 !outputs/browser_tasks/.gitkeep
+outputs/cache/**
+!outputs/cache/.gitkeep
+outputs/tmp/**

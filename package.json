@@ -10,7 +10,13 @@
     "schedule": "node dist/scheduler.js",
     "topic:add": "node dist/cli/topicAdd.js",
     "source:add": "node dist/cli/sourceAdd.js",
-    "source:list": "node dist/cli/sourceList.js"
+    "source:list": "node dist/cli/sourceList.js",
+    "source:extract-likes": "node scripts/extract-like-sources.mjs",
+    "source:extract-likes:resolve": "node scripts/extract-like-sources.mjs --resolve --concurrency 4",
+    "source:extract-following": "node scripts/extract-following-sources.mjs",
+    "source:resolve-following": "node scripts/resolve-following-profiles.mjs --limit 25 --delay-ms 3000 --apply",
+    "source:verify-enabled": "node scripts/verify-enabled-sources.mjs",
+    "source:manual-check": "node scripts/run-manual-source-checks.mjs"
   },
   "engines": {
     "node": ">=18"

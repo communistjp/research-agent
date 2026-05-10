@@ -32,6 +32,9 @@ async function readOptionalJson(path, fallback) {
 async function preflightSource(source) {
   assertSourcePolicy(source);
   if (!source.enabled) return { notes: [] };
+  if (source.method === "manual_check") {
+    return { notes: ["Manual-check source; automated collection was not attempted."] };
+  }
 
   const terms = await checkSourceTerms(source);
   if (!terms.allowed) {
@@ -71,6 +74,7 @@ async function collectForSource(source, topic, now) {
   if (source.method === "official_pdf") return withPreflight(await collectOfficialPdf(source, topic, process.cwd(), now), preflight);
   if (source.method === "public_html") return withPreflight(await collectPublicHtml(source, topic, now), preflight);
 
+  const manualCheck = source.method === "manual_check";
   return [{
     topic: topic.name,
     source_type: source.source_type,
@@ -85,10 +89,14 @@ async function collectForSource(source, topic, now) {
     document_type: "configured_source",
     facts: [],
     inferences: [],
-    unverified_points: [`Collection method ${source.method} is configured but not implemented in the minimal agent.`],
+    unverified_points: [manualCheck
+      ? "Source is enabled for manual review only; no automated article collection was attempted."
+      : `Collection method ${source.method} is configured but not implemented in the minimal agent.`],
     related_entities: topic.keywords,
     confidence: "low",
-    notes: "Skipped by minimal implementation."
+    notes: manualCheck
+      ? "Promoted as a source candidate that requires terms, robots, feed/API, and quality review before automated collection."
+      : "Skipped by minimal implementation."
   }];
 }
 
